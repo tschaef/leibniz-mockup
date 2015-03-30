@@ -1,0 +1,27 @@
+.header
+	+border-shadow(bottom)
+	background: $pale-color
+	height: $header-height
+	padding: $grid
+
+.header__toggle-nav
+	+icon('menu', false, 2)
+	float: right
+
+.header__logo
+	border: ($grid * .5) solid $pale-color
+	border-radius: 50%
+	box-shadow: 0 1px 0 $border-color
+	float: left
+	margin: (-$grid) ($grid * .5) (-$grid) (-$grid * .5)
+	max-height: $grid * 4.5
+
+.header__title
+	+typo-scale(1)
+	color: $primary-color
+	overflow: hidden
+	text-overflow: ellipsis
+	white-space: nowrap
+
+.header__date
+	+typo-scale(0)

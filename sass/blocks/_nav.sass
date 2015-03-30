@@ -1,0 +1,198 @@
+.nav
+
+	&--horizontal
+		margin: (-$grid / 2) (-$grid / 2) ($grid / 2)
+		text-align: center
+
+		ul
+			display: inline-block
+			margin: $grid / 2
+			white-space: nowrap
+
+		li
+			display: inline-block
+			vertical-align: bottom
+
+	// Off-canvas nav
+	&--vertical
+		+border-shadow(left)
+		background: $off-canvas-bg-color
+		color: $off-canvas-color
+		height: 100%
+		margin-right: (-$off-canvas-width)
+		padding: $grid
+		position: absolute
+		right: 0
+		text-align: left
+		top: 0
+		width: $off-canvas-width
+
+		ul
+			margin: (-$grid / 2) 0 ($grid * 1.5)
+
+		li
+			+border-shadow(bottom)
+			display: block
+
+		p
+			margin-bottom: $grid
+
+.nav__heading
+	+typo-scale(2)
+	color: $heading-color
+	margin: 0 0 $grid
+
+.nav__subheading
+	+typo-scale(1)
+	margin: 0 0 $grid
+
+.nav__link
+	display: block
+	padding: ($grid / 2) 0
+
+	+hover
+		background: $shade-color
+
+	&--about
+		+icon('info', true)
+
+	&--back
+		+icon('arrow-with-circle-left', true)
+		font-weight: bold
+
+	&--contact
+		+icon('message', true)
+
+	&--date
+		+icon('calendar', true)
+
+	&--legal
+		+icon('paragraph', true)
+
+	&--number
+		+icon('list', true)
+
+	&--recipient
+		+icon('man', true)
+
+	&--sender
+		+icon('user', true)
+
+.nav__button
+	//+auto-color($button-bg-color)
+	color: $heading-color // TODO
+	+transition(background-color, color)
+	//background: $button-bg-color
+	background: none
+	display: block
+	height: $grid * 1.5
+	line-height: 1
+	padding: $grid / 4
+	position: relative
+	width: $grid * 1.5
+
+	&:before
+		font-size: $font-size * $ratio
+
+	+hover
+		background: $button-bg-color--hover
+		color: $button-color--hover
+
+	&--highlight
+		background: $button-bg-color--highlight
+		color: $button-color--highlight
+
+		+hover
+			background: darken($button-bg-color--highlight, 12)
+			color: $button-color--highlight
+
+	&--bookmark
+		+icon('bookmark')
+
+	&--download
+		+icon('download')
+
+	&--fullscreen
+		+icon('resize-full-screen')
+
+	&--help
+		+icon('help')
+
+	&--next-page
+		+icon('chevron-right')
+
+	&--previous-page
+		+icon('chevron-left')
+
+	&--print
+		+icon('text-document')
+
+	&--script
+		+icon('feather')
+
+	&--settings
+		+icon('cog')
+
+	&--text
+		+icon('text')
+
+	&--zoom-in
+		+icon('plus')
+
+	&--zoom-out
+		+icon('minus')
+
+	&--zoom-reset
+		+icon('magnifying-glass')
+
+.nav__button-title
+	+drop-shadow
+	+transition(opacity, top)
+	background: white
+	color: $text-color
+	//display: none
+	left: (-$grid / 4)
+	opacity: 0
+	padding: 13px
+	pointer-events: none
+	position: absolute
+	top: 125%
+	margin: ($grid / 4) 0 0
+	z-index: 9
+
+	&:before
+		border: $grid / 2 solid transparent
+		border-bottom-color: white
+		content: ''
+		display: block
+		height: 0
+		left: ($grid / 2)
+		position: absolute
+		top: -$grid
+		width: 0
+		z-index: 999
+
+	&.js-show
+		//display: block
+		opacity: 1
+		top: 100%
+
+.nav__input
+	background: none
+	border: 0
+	border-bottom: 3px solid $border-color // TODO
+	display: block
+	height: $grid * 1.5
+	line-height: 1
+	padding: ($grid / 4) 0 ($grid / 4 - 3px)
+	text-align: center
+	width: $grid * 2
+
+	&:focus
+		border-color: $primary-color
+		background: radial-gradient(ellipse at bottom, rgba(#fff, 1) 0%, rgba(#fff, 0) 50%)
+
+	&--wide
+		text-align: left
+		width: 100%
+

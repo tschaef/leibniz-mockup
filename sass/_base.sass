@@ -1,0 +1,41 @@
+html
+	height: 100%
+
+body
+	+transition(margin)
+	color: $text-color
+	font-family: Georgia, serif
+	font-size: $font-size
+	line-height: $line-height
+	min-height: 100%
+	overflow-x: hidden
+	overflow-y: scroll
+	position: relative
+
+	&.js-nav-open
+		margin-right: $off-canvas-width
+
+a
+	color: $primary-color
+	text-decoration: none
+	+transition(background-color, border-color, color)
+
+	+hover
+		color: darken($primary-color, 12)
+
+input,
+select,
+textarea
+	font: inherit
+
+// Only visible to screenreaders
+// @see https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_scaffolding.scss
+.sr-only
+	position: absolute
+	width: 1px
+	height: 1px
+	padding: 0
+	margin: -1px
+	overflow: hidden
+	clip: rect(0, 0, 0, 0)
+	border: 0

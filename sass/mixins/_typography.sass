@@ -1,0 +1,3 @@
+=typo-scale($size)
+	font-size: round( $font-size * power($ratio, $size) )
+	line-height: ceil( round( $font-size * power($ratio, $size) ) / $line-height ) * $line-height

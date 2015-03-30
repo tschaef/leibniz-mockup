@@ -1,0 +1,64 @@
+=border-shadow($position)
+	@if $position == top
+		box-shadow: 0 $border-width 0 $border-color inset
+	@else if $position == right
+		box-shadow: (-$border-width) 0 0 $border-color inset
+	@else if $position == bottom
+		box-shadow: 0 (-$border-width) 0 $border-color inset
+	@else if $position == left
+		box-shadow: $border-width 0 0 $border-color inset
+
+=drop-shadow
+	box-shadow: 0 0 $grid rgba(#000, .24)
+
+=hover
+	&:hover,
+	&:focus,
+	&:active
+		@content
+
+// Entypo+
+=icon($name, $with-text: false, $scale: 0)
+	@extend .entypo-icon
+
+	@if $name == 'paragraph'
+		&:before
+			content: '§'
+			display: inline-block
+			font-weight: bold
+			text-align: center
+			width: 1em
+	@else
+		@extend .entypo-#{$name}
+
+	@if $with-text
+		&:before
+			margin-right: .5em
+
+	@if $scale > 0
+		&:before
+			font-size: $font-size * power($ratio, $scale)
+
+// Font Awesome
+//=icon($name)
+//	@extend .fa-#{$name}
+//
+//	&:before
+//		@extend .fa
+
+// Calculate text-color based on background-color
+// @see https://github.com/getchopstick/chopstick-boilerplate/commits/master/scss/shared/_mixins.scss
+=auto-color($background-color)
+	// Calculations based on https://vimeo.com/60224584
+	@if (.2126 * red($background-color) + .7152 * green($background-color) + .0722 * blue($background-color)) / 255 <= .5
+		color: mix(#FFF, $background-color, 95%)
+	@else
+		color: mix(#000, $background-color, 70%)
+
+=transition($properties...)
+	$list: ()
+
+	@each $property in $properties
+		$list: append($list, $property + ' ' + $transition-time, comma)
+
+	transition: $list
