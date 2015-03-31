@@ -62,3 +62,71 @@
 		$list: append($list, $property + ' ' + $transition-time, comma)
 
 	transition: $list
+
+=button
+	+transition(background-color, color)
+	background: $button-bg-color
+	color: $button-color
+	padding: ($grid / 4) ($grid / 2)
+
+	+hover
+		background: $button-bg-color--hover
+		color: $button-color--hover
+
+=icon-button
+	+transition(background-color, color)
+	background: none
+	color: $heading-color // TODO
+	display: block
+	height: $grid * 1.5
+	line-height: 1
+	padding: $grid / 4
+	position: relative
+	width: $grid * 1.5
+
+	&:before
+		font-size: $font-size * $ratio
+
+	+hover
+		background: $button-bg-color--hover
+		color: $button-color--hover
+
+	&--highlight
+		background: $button-bg-color--highlight
+		color: $button-color--highlight
+
+		+hover
+			background: darken($button-bg-color--highlight, 12)
+			color: $button-color--highlight
+
+=title-popup
+	+drop-shadow
+	+transition(opacity, top)
+	background: white
+	color: $text-color
+	//display: none
+	left: (-$grid / 4)
+	opacity: 0
+	padding: 13px
+	pointer-events: none
+	position: absolute
+	top: 125%
+	margin: ($grid / 4) 0 0
+	z-index: 9
+
+	&:before
+		border: $grid / 2 solid transparent
+		border-bottom-color: white
+		content: ''
+		display: block
+		height: 0
+		left: ($grid / 2)
+		position: absolute
+		top: -$grid
+		width: 0
+		z-index: 999
+
+	&.js-show
+		//display: block
+		opacity: 1
+		top: 100%

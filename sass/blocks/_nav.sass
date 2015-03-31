@@ -13,6 +13,15 @@
 			display: inline-block
 			vertical-align: bottom
 
+	// TODO: Viewer center nav, move!
+	&--center
+		position: absolute
+		left: 38.2%
+		margin-left: -19px // TODO: How is this calced?
+		margin-top: 26px
+		z-index: 9
+		background: #fff
+
 	// Off-canvas nav
 	&--vertical
 		+border-shadow(left)
@@ -79,32 +88,7 @@
 		+icon('user', true)
 
 .nav__button
-	//+auto-color($button-bg-color)
-	color: $heading-color // TODO
-	+transition(background-color, color)
-	//background: $button-bg-color
-	background: none
-	display: block
-	height: $grid * 1.5
-	line-height: 1
-	padding: $grid / 4
-	position: relative
-	width: $grid * 1.5
-
-	&:before
-		font-size: $font-size * $ratio
-
-	+hover
-		background: $button-bg-color--hover
-		color: $button-color--hover
-
-	&--highlight
-		background: $button-bg-color--highlight
-		color: $button-color--highlight
-
-		+hover
-			background: darken($button-bg-color--highlight, 12)
-			color: $button-color--highlight
+	+icon-button
 
 	&--bookmark
 		+icon('bookmark')
@@ -120,6 +104,9 @@
 
 	&--next-page
 		+icon('chevron-right')
+
+	&--parallel
+		+icon('flow-parallel')
 
 	&--previous-page
 		+icon('chevron-left')
@@ -146,36 +133,7 @@
 		+icon('magnifying-glass')
 
 .nav__button-title
-	+drop-shadow
-	+transition(opacity, top)
-	background: white
-	color: $text-color
-	//display: none
-	left: (-$grid / 4)
-	opacity: 0
-	padding: 13px
-	pointer-events: none
-	position: absolute
-	top: 125%
-	margin: ($grid / 4) 0 0
-	z-index: 9
-
-	&:before
-		border: $grid / 2 solid transparent
-		border-bottom-color: white
-		content: ''
-		display: block
-		height: 0
-		left: ($grid / 2)
-		position: absolute
-		top: -$grid
-		width: 0
-		z-index: 999
-
-	&.js-show
-		//display: block
-		opacity: 1
-		top: 100%
+	+title-popup
 
 .nav__input
 	background: none

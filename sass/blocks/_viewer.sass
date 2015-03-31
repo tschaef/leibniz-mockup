@@ -1,13 +1,144 @@
 .viewer
-	+column--padded
+	+column--padded($grid $grid * 2)
+	position: relative
 	width: 38.2%
 
-	img
+	.page,
+	.page *
+		+transition(color, min-height, transform)
+
+	&--right
+		+border-shadow(left)
+
+	&--print
+		img
+			width: 100%
+
+	// Custom styles for letter
+	// .print: print only
+	// .ms: manuscript only
+
+	p
+		text-indent: $grid
+
+	.three-columns
+		+row
+
+		.column
+			+column
+
+			&.peters-nr
+				width: 20%
+
+			&.who
+				text-align: center
+				width: 60%
+
+			&.peters-subnr
+				text-align: right
+				width: 20%
+
+	.heading
+		+typo-scale(1)
+		margin-bottom: $line-height
+
+	.pagebreak
+		color: $text-color--pale
+		border-bottom: $border-width dashed
+		display: block
+		margin-bottom: ($grid - $border-width)
+		text-align: center
+
+		.page-number
+			background: #fff
+			padding: 0 .5em
+			position: relative
+			top: ($grid / 2)
+
+	.print-spaced
+		letter-spacing: .2em
+
+	.ms-underline
+		//text-decoration: underline
+
+	table
+		margin: $grid
+		table-layout: fixed
 		width: 100%
 
-.viewer--right
-	+border-shadow(left)
+	td
+		padding: 0 .5em
 
-.viewer__heading
-	+typo-scale(1)
-	margin-bottom: $line-height
+		&:first-child
+			padding-left: 0
+
+		&:last-child
+			padding-right: 0
+
+	// Position should be set in HTML!
+	.rightbottom
+		position: absolute
+		right: $grid
+		font-size: $font-size--small
+		line-height: $line-height--small
+
+	.margin-before
+		margin-top: $grid
+
+	.float-left
+		clear: left
+		float: left
+		margin-right: $grid
+
+	.no-margin
+		margin: 0 !important
+
+	.rotate
+		cursor: pointer
+		position: relative
+
+		+hover
+			&:before
+				+typo-scale(1)
+				content: 'Drehen'
+				display: block
+				position: absolute
+				z-index: 9
+				width: 100%
+				text-align: center
+				line-height: 100%
+				padding: 50% 0
+				background: radial-gradient(rgba(#000, .5) 10%, rgba(#000, 0) 60%)
+				color: #fff
+				top: 50%
+				margin-top: -50%
+
+	.rotate-left
+		font-size: $font-size--small
+		transform: rotate(-90deg)
+
+	.border-right
+		border-right: $border-width solid
+
+	.border-bottom
+		border-bottom: $border-width solid
+
+	abbr img
+		height: 1em
+		vertical-align: middle
+
+	.inserted
+		background: $pale-color
+		cursor: pointer
+		display: inline-block
+		font-style: italic
+		position: relative
+
+		.popup
+			+title-popup
+
+		+hover
+			color: $link-color
+
+	p  .inserted
+		text-indent: 0
