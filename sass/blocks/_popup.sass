@@ -1,0 +1,46 @@
+.popup
+	+drop-shadow
+	+transition(opacity, top, z-index)
+	background: white
+	color: $text-color
+	left: (-$grid / 4)
+	margin: ($grid / 4) 0 0
+	opacity: 0
+	padding: 13px
+	position: absolute
+	top: 125%
+	z-index: -1
+
+	p
+		margin-bottom: (.5 * $grid)
+
+	&:before
+		border: $grid / 2 solid transparent
+		border-bottom-color: white
+		content: ''
+		display: block
+		height: 0
+		left: ($grid / 2)
+		position: absolute
+		top: -$grid
+		width: 0
+		z-index: 999
+
+	&.-cite
+		min-width: 24em
+
+	&.-visible
+		opacity: 1
+		top: 100%
+		z-index: 99
+
+.popup_pre-heading
+	color: $text-color-pale
+	display: block
+
+.popup_heading
+	+typo-scale(1)
+	margin: (.5 * $grid) 0
+
+.popup_input
+	width: 100%

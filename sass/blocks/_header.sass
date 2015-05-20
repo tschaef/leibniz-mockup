@@ -1,27 +1,70 @@
 .header
 	+border-shadow(bottom)
+	+transition(height, padding)
 	background: $pale-color
 	height: $header-height
 	padding: $grid
 
-.header__toggle-nav
+	.-scrolled &
+		height: ($grid * 2)
+		padding: ($grid / 4 $grid)
+		position: fixed
+		top: 0
+		width: 100%
+		z-index: 99
+
+.header_toggle-nav
 	+icon('menu', false, 2)
 	float: right
 
-.header__logo
+.header_logo
+	+transition(all)
 	border: ($grid * .5) solid $pale-color
 	border-radius: 50%
 	box-shadow: 0 1px 0 $border-color
 	float: left
 	margin: (-$grid) ($grid * .5) (-$grid) (-$grid * .5)
-	max-height: $grid * 4.5
+	max-height: ($grid * 4.5)
 
-.header__title
+	.-scrolled &
+		border-width: ($grid * .25)
+		margin-top: (-$grid * .25)
+		max-height: ($grid * 2.5)
+
+.header_title
+	+transition(all)
 	+typo-scale(1)
 	color: $primary-color
 	overflow: hidden
 	text-overflow: ellipsis
 	white-space: nowrap
 
-.header__date
+	.-scrolled &
+		+typo-scale(0)
+
+.header_date
+	+transition(all)
 	+typo-scale(0)
+
+	.-scrolled &
+		font-size: $font-size-small
+		line-height: 1
+
+.header_metadata,
+.header_pagination
+	float: right
+	margin: ($grid * .25) $grid
+	position: relative
+
+.header_prev-letter
+	+icon('chevron-left', false, 1)
+	position: relative
+
+.header_current-letter
+	margin: 0 .5em
+	position: relative
+	vertical-align: top
+
+.header_next-letter
+	+icon('chevron-right', false, 1)
+	position: relative

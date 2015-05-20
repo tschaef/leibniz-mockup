@@ -6,10 +6,11 @@
 	float: left
 	padding: 0 $grid / 2
 
-=row--padded
-	@extend %clearfix
+=row-padded
+	display: table
+	table-layout: fixed
 	width: 100%
 
-=column--padded($padding: $grid)
-	float: left
+=column-padded($padding: $grid)
+	display: table-cell
 	padding: $padding

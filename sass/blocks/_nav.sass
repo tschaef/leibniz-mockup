@@ -1,6 +1,6 @@
 .nav
 
-	&--horizontal
+	&.-horizontal
 		margin: (-$grid / 2) (-$grid / 2) ($grid / 2)
 		text-align: center
 
@@ -13,17 +13,7 @@
 			display: inline-block
 			vertical-align: bottom
 
-	// TODO: Viewer center nav, move!
-	&--center
-		position: absolute
-		left: 38.2%
-		margin-left: -19px // TODO: How is this calced?
-		margin-top: 26px
-		z-index: 9
-		background: #fff
-
-	// Off-canvas nav
-	&--vertical
+	&.-off-canvas
 		+border-shadow(left)
 		background: $off-canvas-bg-color
 		color: $off-canvas-color
@@ -46,96 +36,105 @@
 		p
 			margin-bottom: $grid
 
-.nav__heading
+.nav_heading
 	+typo-scale(2)
 	color: $heading-color
 	margin: 0 0 $grid
 
-.nav__subheading
+.nav_subheading
 	+typo-scale(1)
 	margin: 0 0 $grid
 
-.nav__link
+.nav_link
 	display: block
 	padding: ($grid / 2) 0
 
 	+hover
 		background: $shade-color
 
-	&--about
+	&.-about
 		+icon('info', true)
 
-	&--back
+	&.-back
 		+icon('arrow-with-circle-left', true)
 		font-weight: bold
 
-	&--contact
+	&.-contact
 		+icon('message', true)
 
-	&--date
+	&.-date
 		+icon('calendar', true)
 
-	&--legal
+	&.-legal
 		+icon('paragraph', true)
 
-	&--number
+	&.-number
 		+icon('list', true)
 
-	&--recipient
+	&.-recipient
 		+icon('man', true)
 
-	&--sender
+	&.-sender
 		+icon('user', true)
 
-.nav__button
+.nav_button
 	+icon-button
 
-	&--bookmark
-		+icon('bookmark')
-
-	&--download
-		+icon('download')
-
-	&--fullscreen
-		+icon('resize-full-screen')
-
-	&--help
-		+icon('help')
-
-	&--next-page
-		+icon('chevron-right')
-
-	&--parallel
-		+icon('flow-parallel')
-
-	&--previous-page
-		+icon('chevron-left')
-
-	&--print
-		+icon('text-document')
-
-	&--script
-		+icon('feather')
-
-	&--settings
-		+icon('cog')
-
-	&--text
-		+icon('text')
-
-	&--zoom-in
+	&.-additions
 		+icon('plus')
 
-	&--zoom-out
+	&.-bookmark
+		+icon('bookmark')
+
+	&.-download
+		+icon('download')
+
+	&.-fullscreen
+		+icon('resize-full-screen')
+
+	&.-help
+		+icon('help')
+
+	&.-minimize
+		+icon('resize-100')
+
+	&.-next-page
+		+icon('chevron-right')
+
+	&.-parallel
+		+icon('flow-parallel')
+
+	&.-previous-page
+		+icon('chevron-left')
+
+	&.-print
+		+icon('text-document')
+
+	&.-restore
+		+icon('resize-full-screen')
+
+	&.-script
+		+icon('feather')
+
+	&.-settings
+		+icon('cog')
+
+	&.-text
+		+icon('text')
+
+	&.-variants
+		+icon('flow-tree')
+
+	&.-zoom-in
+		+icon('plus')
+
+	&.-zoom-out
 		+icon('minus')
 
-	&--zoom-reset
+	&.-zoom-reset
 		+icon('magnifying-glass')
 
-.nav__button-title
-	+title-popup
-
-.nav__input
+.nav_input
 	background: none
 	border: 0
 	border-bottom: 3px solid $border-color // TODO
@@ -150,7 +149,9 @@
 		border-color: $primary-color
 		background: radial-gradient(ellipse at bottom, rgba(#fff, 1) 0%, rgba(#fff, 0) 50%)
 
-	&--wide
+	&.-wide
 		text-align: left
 		width: 100%
 
+.nav_variants
+	display: block

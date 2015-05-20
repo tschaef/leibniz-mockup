@@ -1,0 +1,162 @@
+.content
+	&.-default
+		padding: $grid
+
+	&.-minimized
+		display: none
+
+	.-minimized &
+		&.-default
+			display: none
+
+		&.-minimized
+			display: block
+
+	.lemma-original
+		background: #ddd
+
+	.-transcript &
+		.afootnote
+			position: relative
+
+			&:before
+				border: .5em solid transparent
+				border-top-color: $primary-color
+				content: ''
+				display: inline-block
+				margin: -.25em -.25em 0 0
+				width: 0
+
+			&:after
+				border-top: $border-width dashed $primary-color
+				content: ''
+				display: block
+				height: 1px
+				left: 1em
+				margin-top: -.5em
+				position: absolute
+				top: .4em
+				width: 999em
+
+	.-info &
+		.afootnote
+			border-left: 4px solid $primary-color
+			left: 0
+			padding-left: $grid - 4px
+			position: absolute
+
+		.cfootnote
+			border-color: $secondary-color
+
+
+	// Custom styles for letter
+	// .print: print only
+	// .ms: manuscript only
+
+	img
+		max-width: 100%
+
+	p:not(.center) img,
+	span img
+		max-height: $line-height
+		vertical-align: middle
+
+	.heading
+		+typo-scale(1)
+		margin-bottom: $line-height
+
+	.print-spaced
+		letter-spacing: .2em
+
+	.ms-underline
+		//text-decoration: underline
+
+	table
+		margin: $grid
+		table-layout: fixed
+		width: 100%
+
+	td
+		padding: 0 .5em
+
+		&:first-child
+			padding-left: 0
+
+		&:last-child
+			padding-right: 0
+
+	// Position should be set in HTML!
+	.rightbottom
+		position: absolute
+		right: $grid
+		font-size: $font-size-small
+		line-height: $line-height-small
+
+	.margin-before
+		margin-top: $grid
+
+	.float-left
+		clear: left
+		float: left
+		margin-right: $grid
+
+	.no-margin
+		margin: 0 !important
+
+	.rotate
+		cursor: pointer
+		position: relative
+
+		+hover
+			&:before
+				+typo-scale(1)
+				content: 'Drehen'
+				display: block
+				position: absolute
+				z-index: 9
+				width: 100%
+				text-align: center
+				line-height: 100%
+				padding: 50% 0
+				background: radial-gradient(rgba(#000, .5) 10%, rgba(#000, 0) 60%)
+				color: #fff
+				top: 50%
+				margin-top: -50%
+
+	.rotate-left
+		font-size: $font-size-small
+		transform: rotate(-90deg)
+
+	.border-right
+		border-right: $border-width solid
+
+	.border-bottom
+		border-bottom: $border-width solid
+
+	abbr img
+		height: 1em
+		vertical-align: middle
+
+	.inserted
+		background: $pale-color
+		cursor: pointer
+		display: inline-block
+		font-style: italic
+		position: relative
+
+		+hover
+			color: $link-color
+
+	p  .inserted
+		text-indent: 0
+
+.content_title
+	.-minimized &
+		color: $heading-color
+		font-weight: bold
+		overflow: visible
+		padding: ($grid / 2)
+		text-align: center
+		text-transform: uppercase
+		width: ($grid * 1.5)
+		word-break: break-all

@@ -3,8 +3,8 @@ $ratio: (26/16)
 
 $font-size: 16px
 $line-height: $grid
-$font-size--small: 14px
-$line-height--small: 17.333333px
+$font-size-small: 14px
+$line-height-small: 17.333333px
 $border-width: 1px
 
 $fa-font-path: 'fonts/'
@@ -16,20 +16,22 @@ $transition-time: .4s
 
 // Colors
 $primary-color: #c90230
+$secondary-color: adjust-hue($primary-color, 60)
+$tertiary-color: adjust-hue($primary-color, 120)
 $border-color: #ddd
 $heading-color: #666
 $text-color: #444
-$text-color--pale: #888
+$text-color-pale: #888
 $pale-color: #f4f4f4
 $shade-color: rgba(#000, .03)
 $link-color: $primary-color
 
 $button-color: $text-color
 $button-bg-color: $border-color
-$button-color--hover: $primary-color
-$button-bg-color--hover: $shade-color
-$button-color--highlight: #fff
-$button-bg-color--highlight: $primary-color
+$button-color-hover: $primary-color
+$button-bg-color-hover: $shade-color
+$button-color-highlight: #fff
+$button-bg-color-highlight: $primary-color
 
 $off-canvas-color: $text-color
 $off-canvas-bg-color: $pale-color

@@ -12,13 +12,16 @@ body
 	overflow-y: scroll
 	position: relative
 
-	&.js-nav-open
+	&.-scrolled
+		padding-top: ($grid * 4)
+
+	&.-nav-open
 		margin-right: $off-canvas-width
 
 a
+	+transition(background-color, border-color, color)
 	color: $primary-color
 	text-decoration: none
-	+transition(background-color, border-color, color)
 
 	+hover
 		color: darken($primary-color, 12)
@@ -57,16 +60,7 @@ sub
 input,
 select,
 textarea
+	+transition(background-color, border-color, color)
+	border: 1px solid $border-color
 	font: inherit
-
-// Only visible to screenreaders
-// @see https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_scaffolding.scss
-.sr-only
-	position: absolute
-	width: 1px
-	height: 1px
-	padding: 0
-	margin: -1px
-	overflow: hidden
-	clip: rect(0, 0, 0, 0)
-	border: 0
+	padding: (.25 * $grid - 1px)

@@ -1,35 +1,34 @@
 .sidebar
-	+column--padded
+	+column-padded(0)
 	+border-shadow(left)
-	width: 23.6%
+	width: 280px
 
-	a:not(.nav__button)
+	a:not(.nav_button)
 		// TODO
 		border-bottom: $border-width solid $border-color
 
 		+hover
 			border-color: darken($primary-color, 12)
 
-.sidebar__metadata
+	.content
+		width: 280px
+
+.sidebar_metadata
 	dt
 		display: block
-		color: $text-color--pale
+		color: $text-color-pale
 
 	dd
 		margin-bottom: $grid
-		margin-left: $grid
 
-.sidebar__heading
+.sidebar_heading
 	+typo-scale(1)
 	margin: $grid 0
 
-.sidebar__surrogates
+.sidebar_list
 	margin-bottom: $grid
 
 	li
-		padding-left: 30px // icon width
-
-		+ li
-			+border-shadow(top)
-			margin-top: $grid / 2
-			padding-top: $grid / 2
+		+border-shadow(bottom)
+		margin-bottom: $grid / 2
+		padding-bottom: $grid / 2

@@ -1,71 +1,75 @@
 $(function() {
 
 	$('.js-toggle-nav').click( function() {
-		$('body').toggleClass('js-nav-open')
+		$('body').toggleClass('-nav-open')
 	})
 
 	var buttonTitleTimeout
-	$('.nav__button').hover(
+	$('.popup').parent('a, button').hover(
 		function() {
-			var $title = $(this).find('.nav__button-title')
+			var $title = $(this).find('.popup')
 			buttonTitleTimeout = setTimeout( function() {
-				$title.addClass('js-show')
-			}, 600)
+				$title.addClass('-visible')
+			}, 400)
 		},
 		function() {
-			var $title = $(this).find('.nav__button-title')
+			var $title = $(this).find('.popup')
 			clearTimeout(buttonTitleTimeout)
-			$title.removeClass('js-show')
+			$title.removeClass('-visible')
 		}
 	)
 
-	$('.inserted').hover(
-		function() {
-			$(this).find('.popup').addClass('js-show')
-		},
-		function() {
-			$(this).find('.popup').removeClass('js-show')
-		}
-	)
-
-
-	$('.rotate').each( function() {
-		var min = Math.min( $(this).height(), $(this).width() )
-		var max = Math.max( $(this).height(), $(this).width() )
-		$(this).css({ padding: ((max - min) / 2) + 'px 0' })
+	$('.nav_button.-minimize').click( function() {
+		$(this).parents('.pane').addClass('-minimized')
 	})
 
-	$('.rotate').click( function() {
-		$(this)
-			.toggleClass('no-margin')
-			.children()
-				.toggleClass('rotate-left')
+	$('.nav_button.-restore').click( function() {
+		$(this).parents('.pane').removeClass('-minimized')
 	})
 
-	$('.inserted').append('<div class="popup">Einfügung Gerardy</div>')
-
-	var pageHeightsAreMatched = false
-	$('.nav__button--parallel').click( function() {
-		if (pageHeightsAreMatched) {
-			resetPageHeights()
-		} else {
-			matchPageHeights()
+	// Handle footnotes
+	var prevHeight,
+		prevOffsetTop
+	$('.viewer.-transcript .afootnote').each( function(index) {
+		$this = $(this)
+		$footnote = $(this).clone()
+		$this.html('<span class="footnote-marker"></span>')
+		offsetTop = $this.position().top - 4 - 12
+		$('.viewer.-info .content').append($footnote)
+		if ( index > 0 ) {
+			while ( offsetTop < prevHeight + prevOffsetTop ) {
+				offsetTop += parseInt( $this.css('line-height') )
+			}
 		}
-		pageHeightsAreMatched = !pageHeightsAreMatched
-		$(this).toggleClass('nav__button--highlight')
+		$footnote.css('top', offsetTop + 'px')
+		prevHeight = $footnote.height()
+		prevOffsetTop = offsetTop
+	})
+
+	// Demo variants
+	$('.demo-variant-info.-a').css('top', $('.demo-variant.-a').position().top)
+	$('.demo-variant-info.-b').css('top', $('.demo-variant.-b').position().top)
+
+	$('.header_cite-link').click( function() {
+		$('.popup.-cite').toggleClass('-visible')
+		$('.popup.-cite .popup_input').focus()
+		return false
+	})
+
+	$('.popup.-cite .popup_input').focus( function() {
+		$(this).select()
+	})
+
+	$(window).scroll( function() {
+		$('body').toggleClass('-scrolled', $(window).scrollTop() > 0)
+	})
+
+	$('body').click( function() {
+		$('.popup.-cite').removeClass('-visible')
+	})
+
+	$('.popup.-cite').click( function() {
+		return false
 	})
 
 })
-
-function matchPageHeights() {
-	$('.viewer--print .page').each( function(index) {
-		var $printPage = $(this)
-		var $transcriptPage = $('.viewer--transcript').find('.page').eq(index)
-		var height = Math.max( $printPage.height(), $transcriptPage.height() )
-		$printPage.add($transcriptPage).css({minHeight: height})
-	})
-}
-
-function resetPageHeights() {
-	$('.viewer .page').css({minHeight: 0})
-}

@@ -1,0 +1,9 @@
+// This combines .viewer and .sidebar, consolidate styles here
+
+.pane
+	+transition(width)
+	vertical-align: top
+
+	&.-minimized
+		background: $border-color
+		width: (1.5 * $grid)

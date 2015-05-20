@@ -4,7 +4,7 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Briefedition Gauss Mockup</title>
+<title>Briefedition Leibniz Mockup</title>
 <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -12,904 +12,660 @@
 <body>
 
 <header class="header">
-	<img class="header__logo" src="http://adw-goe.de/typo3conf/ext/tmpl_adw/Resources/Public/Images/logo-akademie-goettingen.png" alt="res doctae" />
-	<a class="header__toggle-nav js-toggle-nav" href="#"><span class="sr-only">Navigation</span></a>
-	<nav class="nav nav--vertical" id="nav">
-		<p class="nav__subheading">Akademie der Wissenschaften zu Göttingen</p>
-		<h2 class="nav__heading">Gauß-Briefe</h2>
+	<img class="header_logo" src="http://adw-goe.de/typo3conf/ext/tmpl_adw/Resources/Public/Images/logo-akademie-goettingen.png" alt="res doctae" />
+	<a class="header_toggle-nav js-toggle-nav" href="#"><span class="sr-only">Navigation</span></a>
+	<div class="header_pagination">
+		<a class="header_prev-letter" href="#133"><span class="popup">Voriger&nbsp;Brief<br>Nr.&nbsp;133</span></a>
+		<span class="header_current-letter">Brief Nr. 134</span>
+		<a class="header_next-letter" href="#158"><span class="popup">Nächster&nbsp;Brief<br>Nr.&nbsp;158</span></a>
+	</div>
+	<div class="header_metadata">
+		<a href="#cite" class="header_cite-link">Zitiervorschlag</a>
+		<div class="popup -cite">
+			<span class="popup_pre-heading">Historisch-kritische Ausgabe:</span>
+			<h2 class="popup_heading"><a href="http://www.gwlb.de/Leibniz/Leibnizarchiv/Veroeffentlichungen/III7B.pdf#page=10">Leibniz, Gottfried Wilhelm: Sämtliche Schriften und Briefe</a></h2>
+			<p>Hrsg. v. Berlin-Brandenburgischen Akademie der Wissenschaften / Akademie der Wissenschaften zu Göttingen</p>
+			<p>Reihe III: Mathematischer, naturwissenschaftlicher und technischer Briefwechsel</p>
+			<h3 class="popup_pre-heading">Persistente URL:</h3>
+			<input class="popup_input" type="url" value="http://www.gwlb.de/Leibniz/Leibnizarchiv/Veroeffentlichungen/III7B.pdf#page=10">
+		</div>
+	</div>
+	<nav class="nav -off-canvas" id="nav">
+		<p class="nav_subheading">Akademie der Wissenschaften zu Göttingen</p>
+		<h2 class="nav_heading">Leibniz-Briefe</h2>
 		<p>
-			<input name="search" class="nav__input nav__input--wide" placeholder="Briefe suchen">
+			<input name="search" class="nav_input -wide" placeholder="Briefe suchen">
 		</p>
-		<h3 class="nav__subheading">Blättern</h3>
+		<h3 class="nav_subheading">Blättern</h3>
 		<ul>
-			<li><a href="#" class="nav__link nav__link--sender">Absender</a></li>
-			<li><a href="#" class="nav__link nav__link--recipient">Empfänger</a></li>
-			<li><a href="#" class="nav__link nav__link--date">Datum</a></li>
-			<li><a href="#" class="nav__link nav__link--number">Seriennummer</a></li>
+			<li><a href="#" class="nav_link -sender">Absender</a></li>
+			<li><a href="#" class="nav_link -recipient">Empfänger</a></li>
+			<li><a href="#" class="nav_link -date">Datum</a></li>
+			<li><a href="#" class="nav_link -number">Seriennummer</a></li>
 		</ul>
-		<h3 class="nav__subheading">Info &amp; Hilfe</h3>
+		<h3 class="nav_subheading">Info &amp; Hilfe</h3>
 		<ul>
-			<li><a href="#" class="nav__link nav__link--about">Über das Projekt</a></li>
-			<li><a href="#" class="nav__link nav__link--contact">Kontakt</a></li>
-			<li><a href="#" class="nav__link nav__link--legal">Impressum</a></li>
+			<li><a href="#" class="nav_link -about">Über das Projekt</a></li>
+			<li><a href="#" class="nav_link -contact">Kontakt</a></li>
+			<li><a href="#" class="nav_link -legal">Impressum</a></li>
 		</ul>
-		<p><a href="http://adw-goe.de" class="nav__link nav__link--back">Zum AdW-Portal</a></p>
+		<p><a href="http://adw-goe.de" class="nav_link -back">Zum AdW-Portal</a></p>
 	</nav>
-	<h1 class="header__title">Heinrich Christian Schumacher → Carl Friedrich Gauß</h1>
-	<div class="header__date">Altona, 15. Februar 1848</div>
-	<div class="header__metadata"></div>
+	<h1 class="header_title"><span class="header_first-name">Gottfried Wilhelm</span> Leibniz &rarr; <span class="header_first-name">Johann</span> Bernoulli </h1>
+	<div class="header_date">Groningen, 14. (24.) August 1697</div>
 </header>
 
 <main class="main">
 
-	<nav class="nav nav--center">
-		<ul>
-			<li><a href="#" class="nav__button nav__button--parallel"><span class="nav__button-title">Seitenhöhe angleichen</span></a></li>
-		</ul>
-	</nav>
+	<div class="pane viewer -left -transcript">
 
-	<div class="viewer viewer--left viewer--print">
+		<div class="content -minimized">
+			<nav class="nav -vertical">
+				<ul>
+					<li><a href="#" class="nav_button -restore"><span class="popup">Wieder herstellen</span></a></li>
+				</ul>
+			</nav>
+		</div>
 
-		<nav class="nav nav--horizontal">
-			<ul>
-				<li><a href="#" class="nav__button nav__button--script"><span class="nav__button-title">Manuskript</span></a></li>
-				<li><a href="#" class="nav__button nav__button--print nav__button--highlight"><span class="nav__button-title">Druckausgabe</span></a></li>
-				<li><a href="#" class="nav__button nav__button--text"><span class="nav__button-title">Transkription</span></a></li>
-			</ul>
-			<ul>
-				<li><a href="#" class="nav__button nav__button--previous-page"><span class="nav__button-title">Vorige Seite</span></a></li>
-				<li><input class="nav__input nav__input--page" value="18"></li>
-				<li><a href="#" class="nav__button nav__button--next-page"><span class="nav__button-title">Nächste Seite</span></a></li>
-			</ul>
-			<ul>
-				<li><a href="#" class="nav__button nav__button--zoom-out"><span class="nav__button-title">Verkleinern</span></a></li>
-				<li><a href="#" class="nav__button nav__button--zoom-reset"><span class="nav__button-title">Zoom zurücksetzen</span></a></li>
-				<li><a href="#" class="nav__button nav__button--zoom-in"><span class="nav__button-title">Vergrößern</span></a></li>
-				<li><a href="#" class="nav__button nav__button--fullscreen"><span class="nav__button-title">Vollbild</span></a></li>
-			</ul>
-		</nav>
+		<div class="content -default">
+			<nav class="nav -horizontal">
+				<ul>
+					<li><a href="#" class="nav_button -script"><span class="popup">Manuskript</span></a></li>
+					<li><a href="#" class="nav_button -text -highlight"><span class="popup">Transkription</span></a></li>
+				</ul>
+				<ul>
+					<li><a href="#" class="nav_button -previous-page"><span class="popup">Vorige Seite</span></a></li>
+					<li><input class="nav_input -page" value="1"></li>
+					<li><a href="#" class="nav_button -next-page"><span class="popup">Nächste Seite</span></a></li>
+				</ul>
+				<ul>
+					<li><a href="#" class="nav_button -zoom-out"><span class="popup">Verkleinern</span></a></li>
+					<li><a href="#" class="nav_button -zoom-in"><span class="popup">Vergrößern</span></a></li>
+					<li><a href="#" class="nav_button -fullscreen"><span class="popup">Vollbild</span></a></li>
+				</ul>
+			</nav>
 
-		<div class="page"><img src="letter/print/B1-S18.jpg" alt=""></div>
-		<div class="page"><img src="letter/print/B1-S19.jpg" alt=""></div>
-		<div class="page"><img src="letter/print/B1-S20.jpg" alt=""></div>
-		<div class="page"><img src="letter/print/B1-S257.jpg" alt=""></div>
-		<div class="page"><img src="letter/print/B1-S15.jpg" alt=""></div>
-		<div class="page"><img src="letter/print/B1-S377.jpg" alt=""></div>
-		<div class="page"><img src="letter/print/B3-S108.jpg" alt=""></div>
-		<div class="page"><img src="letter/print/B3-S109.jpg" alt=""></div>
+			<!-- Letter begin ------------------------------------------------------------>
 
-	</div>
-
-	<div class="viewer viewer--right viewer--transcript">
-
-		<nav class="nav nav--horizontal">
-			<ul>
-				<li><a href="#" class="nav__button nav__button--script"><span class="nav__button-title">Manuskript</span></a></li>
-				<li><a href="#" class="nav__button nav__button--print"><span class="nav__button-title">Druckausgabe</span></a></li>
-				<li><a href="#" class="nav__button nav__button--text nav__button--highlight"><span class="nav__button-title">Transkription</span></a></li>
-			</ul>
-			<ul>
-				<li><a href="#" class="nav__button nav__button--zoom-out"><span class="nav__button-title">Verkleinern</span></a></li>
-				<li><a href="#" class="nav__button nav__button--zoom-reset"><span class="nav__button-title">Zoom zurücksetzen</span></a></li>
-				<li><a href="#" class="nav__button nav__button--zoom-in"><span class="nav__button-title">Vergrößern</span></a></li>
-				<li><a href="#" class="nav__button nav__button--fullscreen"><span class="nav__button-title">Vollbild</span></a></li>
-			</ul>
-		</nav>
-
-<!-- Letter begin ------------------------------------------------------------>
-
-
-		<div class="page">
-			<span class="pagebreak print"><span class="page-number">18</span></span>
-
-			<div class="three-columns heading print">
-				<div class="column peters-nr print">N<sup>o</sup>. 11</div>
-				<div class="column who print">Schumacher an Gauss.</div>
-				<div class="column peters-subnr print">[6</div>
-			</div>
-
-			<!-- normaler Text mit pagebreak B1. S18-20 -->
-			<p>Ich habe die Antwort auf Ihren gütigen Brief, lieber
-				Professor! bis iezt verschoben, um Ihnen zugleich die Resultate
-				der von mir berechneten Repsold'schen Declinationsbeobachtungen
-				zu übersenden. Sie sind alle in dem Zeitraume vom 5. Junius 1804
-				bis zum 2. Aug. desselben Jahrs angestellt. An Bessel habe
-				ich geschrieben und um bessere Declinationen aus Bradley gebeten,
-				bis dahin will ich die Rechnung, so wie sie iezt geführt ist,
-				mit <span class="print-spaced ms-underline">mittlerer</span> Refraction lassen. Am zuverlässigsten sind
-				wohl die Resultate aus den beyden Culminationen des
-				Polarsterns (an demselben Tage beobachtet), da keine Declination
-				dabey entrirt. Aber auch die aus einzelnen stimmen, wie Sie
-				sehen, vortrefflich unter sich, und lassen sich mit den aus
-				beyden gezogenen sehr gut vereinen, wenn man nur die Zach'sche
-				Declination um 3 $''$ ändert. Wenn der Fehler im Instrumente
-				läge, müssten alle, sowohl einzelne, als verbundene Culminationen
-				dasselbe geben. Die übrigen Declinationen sind die
-				Maskelynschen aus Zach's Aberrat. Tafeln. Aberrat. und Nutat. ist, wo
-				es anging, aus Zach's Tafeln, sonst aus Ihren allgemeinen
-				berechnet. Bey dem Polarstern habe ich, obgleich eine Art Tafel
-				in Zach's Werke ist, unmittelbar aus Ihren allgemeinen gerechnet.
+			<p>
+			Vir Amplissime atque Celeberrime Fautor Honoratissime
 			</p>
-		</div>
+			<p>Si de benevolentia mea, ut dicis fuisti semper certissimus, gaudeo speroque
+			Te etiamnum id esse et fore. Non puto me dixisse, quod commendaveris fucos,
+			absit hoc. Omnia quae mihi ab Amico dicuntur in meliorem sensum
+			interpretari soleo. Nimia scrupulositas amicitiae cursum sufflaminat.</p>
+			<p>Gratum est quod tandem agnoscis non tam
+			facile<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; ed tamen a me factum</span> esse synchronae quadratorie determinatae tangentem ducere: dolebam sane,
+			cum viderem a Te verbis meis parvam adeo fidem haberi ut nolueris tantisper
+			cedere in iis quae <span class="italic">tumultuarie</span> tantum considerasti, ego vero improbo
+			meditandi labore penitus enucleavi et plus satis
+			examinavi.<span class="afootnote">&#9001;Dahinter von Leibniz' Hand:&#9002; ed P.*S. ostendit quantum adhuc abfuerit a perfecta
+			enucleatione, et rem a me melius absolutam</span></p>
+			<p>Methodum puncta synchronae una quadratura continua inveniendi, cujus
+			adumbrationem in fine literarum adjecisti, velim ut accuratius perficias,
 
-		<div class="page">
-			<span class="pagebreak print"><span class="page-number">19</span></span>
-			<p>Polhöhe der Repsoldischen Sternwarte in Hamburg</p>
+			<span class="demo-variant -replaced">videtur pulchri quid habere: interim</span>
+			<span class="demo-variant -a">respective aequales ${1\over 2}\sqrt{NL}$</span>
 
-			<!-- Tabelle über zwei Seiten mit "auffüllenden dots"-->
-			<table rend="inline">
-			<tr>
-			<td style="width: 30%;" align="left">Polarstern (beyde Culminat.)</td>
-			<td align="right">53°32<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow></mrow> <mo>'</mo> </msup></math></formula>51<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow></mrow> <mrow><mo>'</mo><mo>'</mo></mrow> </msup></math></formula>,0</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">49, 7</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">48, 8</td>
-			<td align="left">Mittel 49<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow></mrow> <mrow><mo>'</mo><mo>'</mo></mrow> </msup></math></formula>,2</td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">48, 2</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">48, 2</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left">(obere Culminat.) ...</td>
-			<td align="right">53, 9</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">54, 3</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">51, 9</td>
-			<td align="left">Mittel 52<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow></mrow> <mrow><mo>'</mo><mo>'</mo></mrow> </msup></math></formula>,9</td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">52, 2</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">52, 0</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left">(untere Culminat.) ...</td>
-			<td align="right">47, 2</td>
-			<td align="left"></td>
-			<td align="left">Mittel 49<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow></mrow> <mrow><mo>'</mo><mo>'</mo></mrow> </msup></math></formula>,1</td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">47, 0</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">44, 0</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">44, 5</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">45, 2</td>
-			<td align="left">Mittel 45<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow></mrow> <mrow><mo>'</mo><mo>'</mo></mrow> </msup></math></formula>,2</td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">45, 7</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">44, 2</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">44, 6</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">44, 7</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">44, 6</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left">
-			<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>β</mi></math></formula> Urs. maior. ...</td>
-			<td align="right">49, 4</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">54, 4</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left">
-			<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>γ</mi></math></formula> Ursae maior. ...</td>
-			<td align="right">50, 0</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">51, 0</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">52, 3</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">49, 1</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left">
-			<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>η</mi></math></formula> Ursae maior. ...</td>
-			<td align="right">50, 2</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">46, 9</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">49, 6</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">49, 8</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">50, 5</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">51, 5</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left">
-			<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>α</mi> <mn>2</mn> </msup></math></formula> Librae ...</td>
-			<td align="right">48, 2</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">50, 3</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left">Regulus ...</td>
-			<td align="right">55, 6</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left">Arcturus ...</td>
-			<td align="right">55, 6</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">52, 1</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">52, 3</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			</table>
-		</div>
+			<span class="lemma">videtur  ... interim</span><span class="cfootnote"><span class="italic">erg. K</span><sup>1</sup></span> nondum recte video, quo tendat, aut
+			quid faciat ad determinationem tangentis synchronae, neque satis capio
+			mentem Tuam quid sc. intelligas per <span class="italic">vim gravitatis fortiorem factam,</span> et per
+			haec verba <span class="italic">sic omnia in curva AC hac nova gravitate fient proportionaliter
+			ad ea quae in curva A(C) priore gravitate;</span> mihi quidem videtur, prout ego
+			rem concipio, jam per se non mutata gravitate, omnia esse
+			proportionalia<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; ineae sed non motus seu tempus</span> in utraque curva,
+			siquidem similes supponantur.</p>
+			<p>Ecce jam meam solutionem et<span class="cfootnote"><span class="italic">erg. K</span><sup>1</sup></span> constructionem
 
-		<div class="page">
-			<span class="pagebreak print"><span class="page-number">20</span></span>
+			<span class="demo-variant -b">pro brevissimo appulsu</span>
 
-			<table>
-			<tr>
-			<td style="width: 30%;" align="left">Spica ...</td>
-			<td align="right">53°32<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow></mrow> <mo>'</mo> </msup></math></formula>55<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow></mrow> <mrow><mo>'</mo><mo>'</mo></mrow> </msup></math></formula>,9</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">57, 2</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">57, 3</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">51, 5</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left">Denebola ...</td>
-			<td align="right">54, 1</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">52, 3</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">52, 4</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">54, 8</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left"></td>
-			<td align="right">52, 9</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			<tr>
-			<td align="left">Sirius</td>
-			<td align="right">56, 8</td>
-			<td align="left"></td>
-			<td align="left"></td>
-			</tr>
-			</table>
+			<span class="lemma">pro ... appulsu</span><span class="cfootnote"><span class="italic">erg. K</span><sup>1</sup></span>,
+			quia illam gratam fore dicis, videbis ipse optime an aliquid cum idea Tua cognati habeat; peragitur
+			quidem sine synchronae consideratione, interim et hujus tangentes facillime
+			per illam ducuntur<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; ratam fore praevideri poterat, etsi non
+			dixissem</span>. Problema ita se habet <span class="spaced">Datis ordinatim positione curvis
+			similibus ex eodem puncto $A$ similiter descriptis $AIF$, $AHD$, $AGB$ etc.</span>
+			(NB. non necesse est ut habeant commune initium) <span class="spaced">et data positione recta
+			$CD$. Quaeritur ex omnibus istis curvis illa, per quam grave a puncto $A$
+			descendens tempore brevissimo appellat ad rectam
+			$CD$.</span> <span class="spaced">Sol.</span>  Assumatur  ex curvis similibus
+			una quaedam constans, ut $AGB$; sintque duae variabiles
+			$AIF$, $AHD$ situm proximum habentes: Jam si $AH D$ vel $AIFE$ illa sit per
+			quam grave celerrime descendit ad datam $CE$, oportet ut $tAIFE$ sit $=
+			tAHD$ (per $tAIFE$, $tAHD$ intelligo tempus per $AIFE$, et per $AHD$,)
+			utrumque enim tempus minimum et hinc inde crescere supponitur. Ductis per
+			$D$ et $E$ rectis $ADB$, $AEN$ secantibus curvas in $F$, $B$ et $N$;
+			intelligatur ducta $NP$ parallela ipsi $C D$, quae secet $AB$ productam in
+			$P$, ita fient triangula similia $FED$ et $BNP$, in
+			quorum <a href="#asw" /></a><span class="lemma">in quorum  ... videbis</span><span class="cfootnote"><span class="italic">erg. K</span><sup>1</sup></span>
+			laterum $FE$,
+			$FD$ vel $BN$, $BP$ ratione invenienda consistit caput</p>
+			<div class="center">
+			<img src="letter/img/Leibniz-Figure-134-1.jpg"/>
+			</div>
+			<p noindent="true">rei ut videbis<span id="asw" />. Jam
+			facile demonstratur <span class="spaced">tempora per arcus similes esse in subduplicata ratione
+			eorum subtensarum,</span> <span class="spaced">aliarumve linearum
+			homologarum,</span><span class="lemma">aliarumve  ... homologarum</span><span class="cfootnote"><span class="italic">erg. K</span><sup>1</sup></span> ergo$\,$ $tAHD$ $\,$ seu $\, tAIFE~.~tAIF::\surd AD~.~\surd AF ::$ $\surd AP~.~\surd AB$, est autem
+			iterum, ob similitudinem curvarum $tAIFE~.~tAIF :: tAGBN~.~tAGB$, ideoque
+			$tAGBN~.~tAGB::\surd AP~.~\surd AB$ et dividendo $tBN~.~tAGB:: \surd AP -
+			\surd AB~.~\surd AB::$ (ob $BP$ infinite parvum)<span class="lemma">(ob
+			... parvum)</span><span class="cfootnote"><span class="italic">erg. K</span><sup>1</sup></span> $BP~.~2AB$; exprimitur
+			autem $tBN$ per $\frac{BN}{\surd NL}$ adeoque $tAGBN$ per $\displaystyle \int {{BN}\over {\surd NL}}$, unde $\frac{BN}{\surd NL}~.~\displaystyle \int {{BN}\over {\surd NL}} \left( :: BN~.~\surd NL \displaystyle \int {{BN}\over {\surd NL}}\right) :: BP~.~2AB,$ permutando $BN~.~BP::{1\over 2} \surd NL \displaystyle \int {{BN}\over {\surd NL}}~.~AB$. Producto itaque latere $N B$ ad $R$, id est ducta ad curvam $AGB$ tangente
+			$BR$, illaque sumta aequali ${1\over 2} \surd NL \displaystyle \int {{BN}\over {\surd NL}}$, jungatur $AR$, erit triangulum $BAR$ simile parvo triangulo $NBP$ vel $EFD$
+			et proinde $AR$ parallela positione datae $CD$. Ex inventa hac proprietate
+			seu ratione laterum trianguli characteristici $BP$, $BN$
+			problema<span class="lemma">proprietate</span><span class="cfootnote"> | seu ratione trianguli
+			characteristici <span class="italic">erg.</span> |  problema <span class="italic">K</span><sup>1</sup></span> facillime
+			construitur sic: In omnibus punctis curvae assumtae constantis $AGB$
+			ducantur tangentes, et fiant singulae aequales huic, respective,
+			quantitati ${1\over 2} \surd NL$<span class="lemma">fiant</span><span class="cfootnote">[(1)]
+			respective aequales ${1\over 2}\sqrt{NL}$ [(2)] singulae aequales huic respective
+			quantitati ${1\over 2}\sqrt{NL}$ <span class="italic">K</span><sup>1</sup></span> $\int {{BN}\over {\surd NL}}$ (quod
+			utique semper per unam continuam quadraturam peragitur) tunc habebitur nova curva $AOR$; per $A$ ducatur ipsi positione datae $CD$
+			parallela $AR$ secans curvam $AOR$ in puncto $R$, a quo si ducatur tangens
+			$RB$ ad curvam datam $AGB$, determinabitur punctum $B$ quod quaesito est
+			analogum; ducta enim recta $AB$ et si opus producta, secabit positione
+			datam $CD$ in puncto brevissimi appulsus $D$, per quod si describatur $AHD$
+			similis ipsi $AGB$, erit haec $AHD$ illa ipsa quae quaeritur. q.*e.*f. Vides
+			quam brevem et simplicem constructionem
+			repererim<span class="afootnote">&#9001;Darunter von Leibniz' Hand:&#9002; sed tantum
+			pro similibus et similiter positis</span> hujus difficillimi alias
+			problematis; vix puto aliam
+			simpliciorem<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; sed generalior potest</span>
+			vel concinniorem adinveniri posse: id hic notabile existimo, quod licet
+			synchronam non consideraverim, hujus tamen tangens eadem opera inventa est,
+			sed constructione omnino inversa, quia quae antea data sunt jam sunt
+			quaesita et vicissim; datur enim punctum $D$ et quaeritur recta $DC$
+			tangens synchronae transeuntis per $D$, quod sic retrogrado ordine efficio:
+			Duco per $D$ rectam $ADB$ secantem curvam assumtam $AGB$ in puncto $B$, ex
+			quo ducta tangens $BR$ occurret curvae $AOR$ in puncto $R$, quod si
+			jungatur cum $A$ recta $R A$, huic ducenda est parallela $DC$, quae erit
+			tangens synchronae quaesita. Jam spero Te mihi assensurum, quod summo jure dixerim, illum qui licet
+			solverit problema brevissimi appulsus in cycloidibus, non ideo etiam statim
+			id solvisse in aliis curvis similibus, quia in cycloidibus solutio facile
+			habetur sed indirecte ex fundamento optico, nempe ex normalitate undae cum
+			radiis seu synchronae cum brachystochronis; id quod in aliis non obtinet.
+			Quae cum ita sint dicas quaeso annon ipse credas, fratrem meum ad summum
+			solvisse problema in cycloidibus et nec hic plenarie, quia pro recta
+			positione data proponit tantum verticalem, quod me valde obfirmat in
+			suspicione mea, quod scilicet undarum usum huc transferre nesciverit imo de
+			illis ne cogitaverit quidem.
+			Et prout loquitur concludendum est, illum rem
+			pro desperata habuisse in circulis et parabolis, dum ipse suam
+			imbecillitatem fatetur his terminis <span class="spaced">solvant
+			alii</span> <span class="italic">nobis</span>
+			<span class="italic">proposuisse
+			sufficiat</span>. Interim in circulis ex constructione mea universali res adeo
+			facilis est, ut quadratura continua reducatur ad rectificationem curvae
+			alicujus algebraicae<span class="cfootnote"><span class="italic">fehlt K</span><sup>1</sup></span>; scis enim
+			quod si radius sit $a$, et $N L$, $x$; erit ${\frac{BN}{\surd NL}} = {\frac{adx}{\surd aax-x^3}}$, cujus summatio dependet a rectificatione curvae lemniscatae, per quam
+			construximus olim Tuam isochronam paracentricam; Et sic quod notabile est
+			duo haec problemata isochronae paracentricae, et brevissimi
+			appulsus, licet<span class="lemma">appulsus in circulis, licet</span><span class="cfootnote"><span class="italic">K</span><sup>1</sup></span> utrumque transcendens, inter se tamen
+			habent connexionem algebraicam id est uno constructo, alterum algebraice construitur.</p>
+			<p>Caeterum artificium meum reducendi diversas quadraturas ad unam continuam
+			agnosco limitatum hic esse et desiderare ut curvae ordinatim positione
+			datae sint similes et similiter positae; in aliis autem occasionibus quam
+			plurimis eo commode utor licet curvae ordinatim positione datae non sint
+			similes, ut in exemplo ellipsium super eodem axe descriptarum cujus in
+			praecedentibus meis mentionem injeci, sed quod miror in responsione non
+			attingis: Imo ope hujus artificii solvo infinita alia hujusmodi problemata,
+			ubi nunquam curvae similes requiruntur, horum aliquot curiosa perscripsi
+			nuper D<sup>no</sup> Varignonio,<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; uto esse inserta Diario
+			Gallico</span> quae proponat suis Geometris. Unde colligere poteris hoc artificium latius
+			patere nec adeo limitatum esse, quam statim Tibi visum est.</p>
 
-			<!-- Außerhalb des Textflusses -->
-			<p class="rightbottom print" style="margin-top: -830px; width: 12em;">
-			Das kleine Observatorium, auf welchem diese Beobachtungen angestellt sind,
-			lag auf dem Theile des Hamburger Walls, der gegenwärtig die Elbhöhe genannt
-			wird. Nach Reinke's Messungen war der Meridiankreis damals 129,1 Toisen
-			südlich und 240,1 Toisen westlich vom Michaelis-Thurm. Die Coordinaten des
-			Meridiankreises der jetzigen Hamburger Sternwarte gegen Michaelis-Thurm
-			sind 154,8 Toisen nördlich und 172,5 Toisen westlich. Der alte
-			Repsold'sche Meridiankreis war demnach 283,9 Toisen südlicher u.
-			67,6 Toisen westlicher aufgestellt als der jetzige, und 30,8 Toisen
-			nördlicher, 983,1 Toisen östlicher als der Meridiankreis der
-			Altonaer Sternwarte. P.</p>
-			<!-- end-->
+			<p>Et ego semper censui perfectissimam transcendentium expressionem esse per
+			exponentiales, sed mihi videtur frustra illam quaeri in iis quae non
+			dependent a quadratura hyperbolae; unde imaginari non possum quomodo etiam
+			exponentialiter exhiberi posse velis quae supponunt quadraturam circuli,
+			optarem unicum exemplum: certissimum puto omnem quantitatem exponentialem
+			quam voco percurrentem per logarithmicam construi posse. Sed forte aliud
+			adhuc genus exponentialium habes, cujus participem me reddas rogo.</p>
 
-			<!-- zweispaltig mit Bild, Paragraph mit Abstand davor, Paragraph ohne Einrückung B1. S20-->
-
-			<p class="margin-before">
-				Bey den meisten geben, wie Sie leicht sehen werden, die
-				Piazzischen Declinationen weit bessere Resultate. Es scheint
-				mir aber doch schon so die Uebereinstimmung erstaunend.
-				Dies sind die einzigen von allen Beobachtungen, die man zur
-				<img class="float-left" style="height: 14em;" src="letter/img/Figure-B1-20.jpg"/>
-				Polhöhe brauchen kann,
-				weil nachher der Kreis
-				nicht umgelegt ist, so dass
-				man keine Collimation
-				kennt. Durch Umlegen
-				ist sie leicht und genau
-				zu finden. Am Kreise
-				selbst sitzt ein Niveau <formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math></formula>.
-				Wenn das einspielt, wird<br class="print"/>
-				das Miscroscop <formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi></math></formula> (das am
-				Pfeiler festsitzt und gar nicht mit dem Kreise zusammenhängt)
-				auf 0° 0<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow></mrow> <mo>'</mo> </msup></math></formula>0<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow></mrow> <mrow><mo>'</mo><mo>'</mo></mrow> </msup></math></formula>gestellt, dann wird der Kreis umgelegt, und wenn
-				das Niveau wieder einspielt, das Miscroscop <formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math></formula> auch auf 0° 0<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow></mrow> <mo>'</mo> </msup></math></formula>0<formula type="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow></mrow> <mrow><mo>'</mo><mo>'</mo></mrow> </msup></math></formula>gestellt.
-				Jetzt stimmen beide Miscroscope (das Niveau ist auf
-				halbe Secunden empfindlich) und man kann auf gewöhnliche
-				Art aus den Zenithdistanzen in beyden Lagen des Kreises die
-				Collimation bestimmen. Ich theile Ihnen die von mir
-				berechneten Beobachtungen, so wie sie aus dem kleinen Tagebuche
-				genommen sind, mit.
+			<p>Cedo manus: Problema radii non est plus quam determinatum prout intelligis
+			medium variari secundum duas dimensiones: sed si placet attende quod longe
+			difficilius sit determinare leges harum variationum ut radii in datas
+			lineas transeant, quam earundem linearum invenire curvas normaliter
+			secantes, unde<span class="afootnote">&#9001;Darüber von Leibniz'
+			Hand:&#9002; Imo utiliter unde enim ex inverso jam aliunde habitis
+			normaliter secantibus habetur et &#9001;modus&#9002; eterminandi
+			medii densitates.</span> gratis hoc ex illo quaereres. Praeterea observo quod superficies verb. gr. verticalis repraesentans
+			medium varians secundum ambas dimensiones id est secundum rectam verticalem
+			et horizontalem considerari tamen possit tanquam varians secundum unicam
+			tantum dimensionem si vis verticalem.</p>
+			<div class="center">
+			<img src="letter/img/Leibniz-Figure-134-2.jpg"/>
+			</div>
+			<p>
+			Si enim varies medium quocunque modo
+			secundum $ABCDEF$; ita etiam quovis alio modo secundum $ALMNOPA$:
+			manifestum jam est, etiamsi omnia puncta in horizontali $FF$ sint diversae
+			densitatis, dari tamen aliquod punctum $G$ in proxima linea $EE$, quod sit
+			ejusdem densitatis cum $F$, et aliud $H$ in proxima $DD$, item $I$ in $CC$,
+			$K$ in $BB$, $P$ in $AA$ etc. omnia aeque densa ac $F$; quocunque enim modo
+			medium per superficiem $AFFA$ variari concipiatur, haec tamen successio
+			punctorum aeque densorum perpetuo locum habet, quod ni fallor clarum est ex
+			ipsissima Tua <span class="spaced">continuitatis</span> lege. Datur ergo integra linea $FGHIKP$, secundum
+			quam medium aequaliter est densum; jam si eodem modo concipias reliquas
+			lineas $EO$, $DN$, $CM$, $BL$ etc. transire per puncta ejusdem respective
+			densitatis gradus, habebis medium cujus variatio, quae licet duarum sit
+			dimensionum,<span class="afootnote">&#9001;Darüber von Leibniz'
+			Hand:&#9002; sua natura manet duarum</span> jam unius tantum
+			dimensionis est: hinc concludo a Te non sat bene dictum
+				esse:<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; Imo bene, quia sic regulariter: imo hoc ipsum
+			est variari secundum diversas dimensiones</span><span class="italic">Si varies medium uno tantum modo tunc fateor problema fore plus quam
+			determinatum (nec refert $BB$ verbi gratia recta sit an curva)], refert enim
+			maxime recta
+			sit an curva, vidisti enim si curva admittenda esset,
+			omne medium<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; secundum certam tantum curvam</span> quocunque
+			modo<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; imo aliquando et secundum rectas</span> varietur
+			uno tantum modo variari intelligendum esse. Quod itaque palmarium est in
+			determinatione medii ut radios transmittat per lineas ordinatim positione
+			datas, perspexi rem eo recidere ut determinentur lineae $FGHIKP$, $EO$,
+			$DN$ etc. quod autem ut supra monui longe difficilius est quam inventio
+			curvarum ad datas normalium. Sed haec pro perspicacitate Tua me multo
+			melius penetrabis, velim per otium cogites, offert sese mihi difficultas
+			insuperabilis in eo, quod infinitae lineae curvae sunt determinandae,
+			forsan omnes diversae naturae.<span class="afootnote">&#9001;Dahinter von Leibniz' Hand:&#9002; Quia id jam aliunde habemus, normales
+			poterimus et haec solvere habemus,<span class="lemma">habemus,</span><span class="cfootnote">[(1)] poterimus
+			haec problemata subi <span class="italic">bricht ab</span> [(2)] normales  ... et haec <span class="italic">LiK</span><sup>2</sup></span>
 			</p>
 
-			<!-- Querseite B1. S 377 -->
-			<div class="rotate">
-				<div class="rotate-left">
-					<table class="table-border">
-					<tr>
-					<td class="border-right" align="center"></td>
-					<td class="border-right" align="right"></td>
-					<td class="border-right" align="right"></td>
-					<td class="border-right" align="right"></td>
-					<td class="border-right" align="right"></td>
-					<td align="center" cols="2">Zahl der Beobb.</td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center">No. des</td>
-					<td class="border-right" align="right"></td>
-					<td class="border-right" align="right"></td>
-					<td class="border-right" align="right"></td>
-					<td class="border-right" align="right"></td>
-					<td class="border-right" align="center" cols="1">Göttingen</td>
-					<td align="center" cols="1">Altona</td>
-					</tr>
-					<tr class="border-bottom">
-					<td class="border-right" align="center">Sterns</td>
-					<td class="border-right" align="center" cols="1">Z. D. in Göttingen</td>
-					<td class="border-right" align="center" cols="1">Z. D. in Altona</td>
-					<td class="border-right" align="center" cols="1">Amplitude</td>
-					<td class="border-right" align="center" cols="1">Gewicht</td>
-					<td class="border-right" align="center" cols="1">O W</td>
-					<td align="center" cols="1">O W</td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center">I</td>
-					<td class="border-right" align="right">1° 26' 29”20 n</td>
-					<td class="border-right" align="right">0° 34 ' 29”46 s</td>
-					<td class="border-right" align="right">2° 0' 58”66</td>
-					<td class="border-right" align="right">3,333</td>
-					<td align="right">2 6</td>
-					<td>5 3</td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center">II</td>
-					<td class="border-right" align="right">0 28 7,94 s</td>
-					<td class="border-right" align="right">2 29 7,21 s</td>
-					<td class="border-right" align="right">59,27</td>
-					<td class="border-right" align="right">4,319</td>
-					<td align="right">3 5</td>
-					<td>7 4</td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center">III</td>
-					<td class="border-right" align="right">0 42 32,27 s</td>
-					<td class="border-right" align="right">2 43 30,20 s</td>
-					<td class="border-right" align="right">57,93</td>
-					<td class="border-right" align="right">3,333</td>
-					<td align="right">3 5</td>
-					<td>6 2</td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center">IV</td>
-					<td class="border-right" align="right">2 6 7,22 n</td>
-					<td class="border-right" align="right">0 5 9,67 n</td>
-					<td class="border-right" align="right">57,55</td>
-					<td class="border-right" align="right">4,404</td>
-					<td align="right">3 5</td>
-					<td>8 4</td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center">V</td>
-					<td class="border-right" align="right">1 28 35,40 n</td>
-					<td class="border-right" align="right">0 32 24,81 s</td>
-					<td class="border-right" align="right">60,21</td>
-					<td class="border-right" align="right">3,556</td>
-					<td align="right">2 4</td>
-					<td>8 4</td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center">VI</td>
-					<td class="border-right" align="right">0 28 18,66 s</td>
-					<td class="border-right" align="right">2 29 18,14 s</td>
-					<td class="border-right" align="right">59,48</td>
-					<td class="border-right" align="right">4,211</td>
-					<td align="right">3 5</td>
-					<td>6 4</td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center">VII</td>
-					<td class="border-right" align="right">0 15 17,61 s</td>
-					<td class="border-right" align="right">2 16 15,52 s</td>
-					<td class="border-right" align="right">57,91</td>
-					<td class="border-right" align="right">3,775</td>
-					<td align="right">3 4</td>
-					<td>7 3</td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center">VIII</td>
-					<td class="border-right" align="right">0 13 20,92 n</td>
-					<td class="border-right" align="right">1 16 23,60 s</td>
-					<td class="border-right" align="right">sind wol ver-</td>
-					<td class="border-right" align="right"></td>
-					<td align="right">3 4</td>
-					<td>5 4</td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center"></td>
-					<td class="border-right" align="right"></td>
-					<td class="border-right" align="right"></td>
-					<td class="border-right" align="right">schied. Sterne</td>
-					<td class="border-right" align="right"></td>
-					<td align="right"></td>
-					<td></td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center">IX</td>
-					<td class="border-right" align="right">0 0 16,26 s</td>
-					<td class="border-right" align="right">2 1 14,94 s</td>
-					<td class="border-right" align="right">58,68</td>
-					<td class="border-right" align="right">4,898</td>
-					<td align="right">5 4</td>
-					<td>6 5</td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center">X</td>
-					<td class="border-right" align="right">0 32 32,83 n</td>
-					<td class="border-right" align="right">1 30 26,75 s</td>
-					<td class="border-right" align="right">59,58</td>
-					<td class="border-right" align="right">3,692</td>
-					<td align="right">3 4</td>
-					<td>4 4</td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center">XI</td>
-					<td class="border-right" align="right">0 3 46,77 s</td>
-					<td class="border-right" align="right">2 4 45,28 s</td>
-					<td class="border-bottom" class="border-right" align="right">58,46</td>
-					<td class="border-bottom" class="border-right" align="right">4,000</td>
-					<td align="right">4 4</td>
-					<td>4 4</td>
-					</tr>
-					<tr>
-					<td class="border-right" align="center"></td>
-					<td class="border-right" align="right"></td>
-					<td class="border-right" align="right">Mittel</td>
-					<td class="border-right" align="right">2° 0' 58”77</td>
-					<td class="border-right" align="right">39,521</td>
-					<td align="right"></td>
-					<td></td>
-					</tr>
-					</table>
-					<p class="margin-before">
-						Alle hiesigen Beobachtungen sind meiner Krankheit wegen von Hansen gemacht.
-					</p>
-				</div>
-			</div>
-		</div>
+			<p>
+			Nuspiam quidem diserte dixisti rem aeque esse facilem in appulsu ad rectam
+			et ad curvam; id tamen ex verbis Tuis sequi credebam cum dicis <span class="italic">eadem
+			methodus videtur etiam servire, si celerrimus appulsus quaeratur non ad
+			rectam sed ad curvam positione datam.</span> Si duo diversa per eandem methodum
+			solvuntur, illa duo mihi sunt aeque
+			facilia.<span class="afootnote">&#9001;Dahinter von Leibniz' Hand:&#9002; [Non sequitur]<span class="lemma">[Non seqvitur]</span><span class="cfootnote"><span class="italic">LiK</span><sup>2</sup>, <span class="italic">Klammern von Leibniz</span></span>
+			</p>
 
-		<div class="page">
-			<!-- Bild im Fließtext B2. S.20-->
-			<span class="pagebreak print"><span class="page-number">20</span></span>
+			<p>
+			Video verissimum esse legem minimi vel maximi et in particula curvae minima
+			locum habere, sed sane non possum applicationem ad isoperimetra constituere
+			neque etiam ad brachystochronam datae longitudinis. Verum non minus est,
+			rem posse considerari prius
+			</p>
+
+			<div class="center">
+			<img src="letter/img/Leibniz-Figure-134-3.jpg"/>
+			</div>
+
 			<p class="noindent">
-				26sten an, oder wenn ich wider Erwarten später dahin kommen
-				sollte, von meiner Ankunft an, täglich etwa von 2 $\frac{1}{2}$ bis 3 Uhr
-				Licht nach Neuwerk zur Aufforderung geschickt werden, bis es
-				erwiedert wird; oder umgekehrt, Licht das von dorther kommt,
-				das erstemahl wo ich es sehe, einige Minuten hindurch erwiedert
-				werden. Der Thurm ist sehr kenntlich, <img src="letter/img/Figure-B2-20.jpg" /> nur ganz
-				vermauert, so dass ich von aussen über das Kirchendach durch
-				Leitern hinauf muss, auch sehr eng, ich glaube nur 5 Fuss im
-				Durchmesser. Ich brauche übrigens das Heliotroplicht von
-				Neuwerk Vormittags gar nicht, und Nachmittags nur von 3 Uhr an
-				bis &#x2609; Untergang. Von Langwarden gehe ich demnächst erst
-				nach Jever und kann dem Neuwerker Heliotropisten meinen
-				bevorstehenden Abgang durch das Attentionszeichen tactmässig
-				wechselnde Bedeckung und Oeffnung des Lichts (immer 0''4
-				offen und eben so lange zu) anzeigen, welches auf der Stelle eben
-				so zu beantworten ist. Ueber das Weitere auf Wangeroog kann
-				ich aber in diesem Augenblick noch nichts Gewisses bestimmen.
-			</p>
-			<p>Noch muss ich die Bitte beifügen, dass der Platz, wo der
-			Heliotrop in Neuwerk aufgestellt wird, auf jeden Fall so
-			kenntlich und dauerhaft bezeichnet wird, dass er auch wo möglich
-			noch nach Jahr und Tag genau wieder aufgefunden werden
-			kann. Ich selbst pflege in ähnlichen Fällen durch die drei
-			Fussspitzen einen <span class="print-spaced ms-underline">Kreis</span> zu beschreiben, dessen Centrum als
-			Zielpunkt betrachtet wird. Bei meinen beiden neuesten Heliotropen
-			ist noch das Centrum selbst durch eine Spitze bezeichnet,
-			welches viel Bequemlichkeit verschafft. Hat Rumpf die für Davy
-			schon eingeliefert?</p>
-				<p>Endlich bemerke ich noch, dass ich zwar die $\frac{1}{4}$ Piepe Wein
-				<span class="print-spaced ms-underline">recht gern ganz</span> annehme; da ich indessen selbst fast gar
-				keinen und meine Frau nur wenig trinkt, so wird dieser Vorrath
-				leicht drei oder mehrere Jahre ausreichen, und ich würde also
-				gar nichts dawider haben, wenn Sie vielleicht jemand einen
-				Gefallen damit erzeigen, dass Sie einen Theil davon allenfalls
-				bis zur Hälfte oder $\frac{2}{3}$ des $\frac{1}{4}$ abliessen.
+			in ellipsi ordinaria et finita $PQR$ (hoc enim
+			jam diu et ego concipiebam) et determinari in ea punctum $M$, ut ex focis
+			ductae $LM$, $MN$ percurrantur citissime ex data
+			altitudine: demus porro
+			haec deinde posse applicari ad infinite parva, ita ut ratio $LM$ ad $MN$
+			dari possit: Nondum tamen video, nec videbo donec mihi
+			ostenderis <span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; vellem prius calculum in ipsis finitis factum videre labori ut parcam
+			</span> quomodo postea iterum regressus detur a cognitione speciei trianguli
+			infinite parvi $LMN$, ad cognitionem ordinarii, curvae sc. quaesitae vel
+			saltem ad aequationem differentio-differentialem: Quomodo quaeso eo
+			pervenire posses, cum in aequatione litera reperiri necesse sit quae
+			determinet longitudinem curvae (alias indifferens esset pro omnibus
+			brachystochronis) illa litera vero vel illud quicquid sit quod determinet
+			longitudinem curvae, nequidem ingrediatur in considerationem quaerendo
+			speciem trianguli $LMN$. Dixi perpetuo inveniri posse speciem trianguli
+			$LMN$, ita ut descensus per $LMN$ sit citissimus; sed fateor me id nondum
+			quaesivisse, quia a me impetrare non possum ut absolvam calculum
+			prolixissimum qui requiritur. Interim ut obstacula omnia removeam ponamus
+			calculum nobis ostendisse in ellipsi ordinaria et finita punctum $M$ ita se
+			habere, ut triangulum $LMN$ habeat unum latus $LM$ duplum alterius $MN$,
+			atque adeo idem etiam obtinere in ellipticula infinite parva: Quo pacto
+			mihi jam quaeres curvam datae
+			longitudinis,<span class="afootnote">&#9001;Darüber von Leibniz'
+			Hand:&#9002; imo hoc per se sequitur, ut sit datae longitudinis quia et particula talis est</span> ex eo quod ejus particulae minimae
+			$LMN$ faciant ubique triangulum cujus unum latus $LM$ duplum sit
+			alterius $MN$? <span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; hoc fieri hoc loco non potest, quia debent $LM$ et $MN$ inassignabiliter differre</span>
+			Si triangulum $LMN$ posuissem
+			isosceles, praevideo quod mihi responsurus esses curvam quaesitam esse
+			circulum, quamvis id nullo calculo invenire posses, ideoque ut superfluam
+			disputationem evitem pono unum latus duplum alterius, vel si mavis triplum,
+			quadruplumve etc. modo non sit isosceles.
 			</p>
 
-			<!-- Mehrere Zeichnungen zweispaltig, mit Paragraph in der rechten Spalte B1. S.257 (ohne Heading) -->
-			<!-- Währungszeichen, gesperrter Text, Fußnote vom Autor -->
-
-
-			<p>Ich eile, mein theuerster Freund und Gönner, Ihre beiden
-			gütigen Briefe zu beantworten. Der Schlüssel ist unstreitig hier
-			geblieben, ich habe aber eine solche Menge, dass ich ihn nicht
-			aussuchen kann und Sie bitten muss, auf meine Kosten einen
-			neuen machen zu lassen.</p>
-			<p>Dass Pennington seinen Gang plötzlich ändere, habe ich
-			Ihnen vorhergesagt. Meine Datum's sind alle astronomisch.</p>
-			<p>Seit etwa 3 Wochen bin ich unpässlich, ohne krank zu seyn.
-			Sonst wäre ich jezt schon in Copenhagen.</p>
-			<p>Unglücklicherweise habe ich keine Zeichnung von meinem
-			Hause, und es steht zerlegt auf dem Boden des Gasthofes in
-			Ahrensburg. Roh mit der Feder gezeichnet sieht es so aus:</p>
-
 			<p>
-				<span class="float-left">
-					<img src="letter/img/Figure1-B1-257.jpg"/><br>
-					<img src="letter/img/Figure2-B1-257.jpg"/><br>
-					<span>
-						Eine Seitenfläche ist <br class="print"/>die Thür; über der Thür <br class="print"/>ist oben eine Klappe für <br class="print"/>den Nordstern.
-					</span>
-				</span>
-				a, a, a etc. sind Luken, die bei <br class="print"/>b Scharniere haben, um
-				niederge<br class="print"/>klappt zu werden. Mit seinem Kasten <br class="print"/>ganz fertig kostet es 250 M <abbr title="Thaler"><img class="currency" src="letter/img/Thaler.jpg" /></abbr> Courant <br class="print"/>
-				(14 <abbr title="Thaler"><img class="currency" src="letter/img/Thaler.jpg" /></abbr> = 1 Louisd'or oder Friedrichs<br class="print"/>d'or). Soll ich Ihnen eines machen <br class="print"/>
-				lassen, oder befehlen Sie, dass ich <br class="print"/>einen Officier nach Ahrensburg sende? <br class="print"/>
-				Wegen des dazu gehörigen Segel<br class="print"/>tuchs glaube ich nicht, dass Sie es <br class="print"/>
-				dort für einen so geringen Preis er<br class="print"/>halten können. 18 Friedrichsd'or ist <br class="print"/>
-				nicht viel für die <br class="print"/>Bequemlichkeit, die es gewährt.
-			</p>
-			<p>
-				Dieser Brief enthält Ihre Dreyecke <br class="print"/>zum 7ten Stück.<span class="footnote author">S. Astronomische Nachrichten Band 1 Nr. 7.</span> Sie sind aber <br class="print"/>
-				schlecht gestochen, und Ihre Helio<br class="print"/>tropen sollen besser werden. Ich bitte <br class="print"/>
-				bald darum.
-			</p>
-			<p>
-				Aus dem 7ten Stücke werden Sie sehen, wenn Sie <br class="print"/>es nicht schon sonst <br class="print"/>wissen, dass Pond's Kreis ohne <span class="print-spaced ms-underline">dass</span>
+			P. Malebranchius utique non egit ut decet, quod Te inconsulto
+			libellum suum
+			in lucem protrusit; dissuasissem id ego ipsi si tum temporis cogitassem
+			quod jam cogito, aut saltem si de privato inter
+			vos commercio<span class="dfootnote">vgl. den Briefwechsel mit Malebranche
+			in Reihe II.</span> quod
+			Malebranchius apud me ex parte dissimulaverat constitisset magis; Quid in
+			isto libello contra continuitatis legem contineatur, jam non memini; ex quo
+			enim Galliam deserui libellum amplius haud vidi.
 			</p>
 
-			<!-- Fett gedruck, Gerardy-Ergänzung B3. S108 -->
+			<p>
+			Corporum indivulsorum gradus Tuos admittam, mihi tamen videtur partes
+			eundem servare posse situm inter se, absque ut statuatur corpus perfecte
+			rigidum (loquor de corpusculis exiguis ex quibus majora componuntur);
+			sufficit utique motum conspirantem partium alicujus corpusculi tantum esse,
+			ut ab ambientibus disturbari non
+			possit,<span class="afootnote">&#9001;Darüber von Leibniz'
+			Hand:&#9002; Vix resistet toti universo</span> quo
+			casul <span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; imo non habetur</span> primus indivulsi gradus habetur sine perfecta rigiditate seu duritie.
+			Video clarissime perfecte dura non dari posse, eaque proin absolute
+			rejicio, sed vacuola interspersa Democriti et Gassendi eatenus tantum
+			rejicio, quod jam videam iis non opus esse ad explicandos naturae effectus,
+			contra quam olim credebam motum sc. nullum fore si omnia in universo essent
+			plena, vulgari opinione nixus duritiem dependere ab immediato contactu et
+			pressione materiae ambientis: Quod autem actu ista vacuola non dentur,
+			credo non tam facile demonstrari posse ab illis praesertim qui corporis
+			essentiam non in nuda extensione statuunt. Et sane multis ex locis haud
+			obscure colligo etiam Hugenium vacui fautorem fuisse. Caeterum
+			Democriticorum et Gassendistarum atomos perfecte duras statuentium,
+			illisque vacuum interjicientium opinio non tam absona mihi videtur, quam
+			Hartsoekeri duo extrema inter se conjungentis nempe perfecte durum et
+			perfecte fluidum, quo absurdius nihil excogitari potuit; nihil enim magis
+			continuitatis legi adversatur quam saltus ille ab uno extremo ad alterum.
+			Parum soliditatis Hartsoekerus ostendit in scriptis suis multoque minus
+			alter ille Professor Matheseos Parisinus La Montre, miror qui potueris
+			interpositione Tua dignari hos duos inter se inepte admodum disputantes; me
+			sane non moveret duorum coecorum de coloribus altercatio, neque ei me
+			miscerem. Quid obsecro boni ab homine expectandum, qui in notiones communes
+			misere adeo peccat ceu factum fuit ab isto La Montre, qui 47<sup>am</sup> prop. Euclid.
+			demonstrare volens immediate per axiomata, crassum adeo et palpabilem
+			commisit paralogismum, ut mathematicorum nemo eum refutare dignaretur sed
+			oportebat, proh pudor! ut quaedam de sequiori sexu illum castigaret, id quod
+			revera fecit Dn. Marchionis Hospitalii Uxor, ut forte vidisti in Diario
+			Parisiensi. Hiccine Professor est, qui alios mathesin docere debet? pudeat
+			hominem ignorantiam suam ita turpiter prodidisse. Quid id ad nos? dices;
+			ignosce, verum est, ejus errores nobis parum imponent; interim quia
+			incidenter de isto homine cogito, non possum non stomachari quod tam male
+			consultum sit illis qui scientiam ab eo haurire volunt. Vale.
+			</p>
 
-			<p>
-				Von dem <span class="inserted gerardy">Airy-Christieschen</span> Raport hatte mir Herr von Humboldt schon vor vierzehn Tagen einen ausführlichen Extract geschrieben, namentlich von allem was meine Arbeiten und Apparate betrifft. Sie, mein theuerster Freund, nennen dieß <span class="inserted gerardy">„Unsinn”</span>. Herr von Humboldt drückt sich etwas milder aus und findet die Einwendungen nur <span class="inserted gerardy">„albern”</span>. Ich hatte Humboldt damals hierauf geantwortet, daß zwar wir beiden, er und ich, <span class="print-spaced ms-underline">von unserm Standpunkte</span> aus solche Einwendungen [[„albern”]] finden müßten, dass sich jedoch auch etwas zur Entschuldigung sagen lasse; in der That ich selbst habe vor 4 $\frac{1}{2}$ Jahren, wo ich das Wesen des Magnetismus noch nicht hinlänglich kannte, und wo <span class="print-spaced ms-underline">Erfahrungen</span> über schwerere Nadeln noch gar nicht existirten, meine Uebergänge von 1-löthigen Nadeln zu 4- und 8-löthigen, dann zu 1-pfündigen; dann später den von 1-pfündigen zu 2- und 4-pfündigen nur mit Furchtsamkeit gemacht, und diese Furchtsamkeit erst verloren, als theils <span class="print-spaced ms-underline">alle Erfahrungen ohne Ausnahme</span> die immer steigenden Vorzüge der schwereren vor leichtern bestätigten, theils meine Einsicht in das Wesen des Magnetismus so klar geworden war, dass ich die Nothwendigkeit jenes Vorzugs a priori übersehen konnte.
-			</p>
-			<p>
-				Auf unserm jetzigen Standpunkte stehen nun <span class="inserted gerardy">Airy-Christie</span> nicht. Von dem Wesen des Magnetismus haben sie wohl noch ganz verworrene Begriffe, und die Erfahrungen <span class="print-spaced ms-underline">kennen sie nicht</span>, nach der Sitte der Engländer und Franzosen sich um das was im Auslande geschieht wenig zu bekümmern. Die Deutschen tadeln diese Sitte, nicht ganz mit Unrecht; aber meiner Meinung nach, gehen die Deutschen wieder auf der andern Seite viel zu weit.
-			</p>
-			<p>
-				Ich meines Theils wenigstens nehme zwar alle <span class="print-bold ms-underline">wahren</span> <span class="print-spaced ms-underline">wissenschaftlichen</span> Fortschritte, die jenseits des Rheins und jenseits des Canals gemacht werden, freudig auf, aber, wenn sie drüben dumme Streiche machen <span class="inserted gerardy">oder Albernheiten vorbringen</span>, so ist dabei weiter nichts zu thun, als eben <span class="print-spaced ms-underline">gar keine</span> Notiz davon nehmen. <span class="inserted gerardy">Mit einer Widerlegung erzeigte man ihnen viel zu viel Ehre.
-				Es wird zwar allerdings zu bedauern sein, wenn die großen Mittel, welches jene reiche Land aufwenden kann, auf eine unverständige Art verwandt werden sollten. Ich meines Orts werde mich aber in die Sache nicht ohne bestimmt gegebene Veranlassung mischen.</span>
-			</p>
-		</div>
-
-		<div class="page">
-			<span class="pagebreak print"><span class="page-number">109</span></span>
-
-			<!-- Gerardy-Ergänzung B3. S109, Zitat, Aufzählung-->
-
-
-			<p>
-				An Herrn <span class="inserted gerardy">Airy</span> werde ich also, wie Sie leicht denken können, nicht schreiben. Wollen die Engländer mein Urtheil wissen, so mögen sie es suchen, aufdringen ist meine Sache nicht.
-			</p>
-			<p>
-				Dagegen aber stehe ich nicht an, <span class="print-spaced ms-underline">Ihnen</span> die sich darbietenden Bemerkungen zu den betreffenden Stellen des Reports mitzutheilen
-			</p>
-			<p>
-				1) Es wird gesagt, von meinen Methoden und Arbeiten zu sprechen sei deswegen überflüssig, da der Societät das von mir derselben übergebene Memoir vorliege
-			</p>
-			<p>
-				Damit hat es nun folgende Bewandtniss.
-			</p>
-			<p>
-				Der <span class="print-spaced ms-underline">Societät</span> habe ich <span class="print-spaced ms-underline">gar Nichts</span> vorgelegt. Bloss dem Herzog von Sussex habe ich Ende 1832 einen Abdruck des Stücks der G. G. A. geschickt, das eine kurze Nachricht von meiner im December 1832 gehaltenen Vorlesung enthält (und auch in Ihren A. N. abgedruckt wurde). Diesen Artikel hatte der Herzog (vermuthlich durch Herrn König) in's Englische übersetzen lassen, und diese (beiläufig gesagt, sehr verstümmelte und zum Theil unrichtige) Uebersetzung meines ersten Aufsatzes ist alles was der Societät vorliegt.
-			</p>
-			<div class="inserted gerardy">Eine vollständige Nachweisung aller einzelnen Artikel den Magnetismus betreffend, welche ich seit jener Zeit publicirt habe, hatte ich im November 1835 an Herrn Airy geschickt, worauf er erwiderte Nov. 30:
-				<p class="quote">
-					„I have not yet been able to refer to the papers which you specified”
-				</p>
-				<p>
-					Es erhellet nicht, ob er sich Mühe gegeben hat, diese Papers zu erhalten. Aber man kann nicht zweifeln, daß er auch am 8. Junius 1836 noch gar nichts davon gelesen hatte.
-					Mit diesem Lesen oder Nichtlesen mögen es nun die Engländer halten, wie ihnen beliebt. Es bleibt jedoch ein Zeichen von Muth, daß sie unternehmen über eine Sache zu urtheilen, wovon sie nicht viel mehr wie nichts wissen (Ich meine nemlich, wenn sie, wie ich, unter schweren Stäben nur die größten, wenigstens 4 oder 25pfündigen verstehen, von deren Succeß eben nur aus dem spätem Aufsatz etwas zu ersehen ist.
-				</p>
+			<div class="three-column">
+			<div class="column">Ampl. T. </div>
+			<div class="column">Devotissimus</div>
+			<div class="column">J. Bernoulli</div><span class="cfootnote">J. Bernoulli | Groningae
+			10 Aug 1697
+			<span class="italic">erg. u. gestr.</span> |  P.S. <span class="italic">K</span><sup>2</sup></span>
 			</div>
-			<p>
-				2) Die Reporters haben die Besorgniss (apprehension), dass schwere Stäbe unempfindlich sein für die schnellen Veränderungen, die wahrscheinlich in plötzlichen Veränderungen der Atmosphäre ihren Grund hätten.
+
+			<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; pertinet ad literas Dn. Bernoullii Gröningensis 14 Aug. 1697</span>
+			Praeterito die Lunae hasce literas jam scriptas habui postridie dimissurus,
+			cum eodem die acciperem novissimas Tuas 3 Aug. datas, quae fecerunt ut
+			dimissionem in hunc diem distulerim, quo interea tuas diligenter perlegere,
+			et quod forte notaturus essem huc adjicere possem. Ut dicam quod res est,
+			incredibili gaudio perfusus sum, cum viderem eundem genium Tibi totum
+			mysterium pandisse, sed indignor quod Te altius admiserit quam me. Utique
+			rem probe penetrasti, annotando totius negotii cardinem in eo consistere,
+			ut inveniatur ratio laterum trianguli characteristici $_1C_1F_1(C)$ in Tua
+			figura; colligere poteris ex solutione mea supra allata problematis
+			celerrimi appulsus, ubi pariter rationem assigno laterum trianguli $PBN$
+			vel $DFE$, methodum meam eodem artificio niti. Sed fateor mihi unicum
+			defuisse, quin perfecerim methodum, quod scilicet mihi non venit in mentem
+			differentiatio parametrorum seu quantitatum in eadem curva invariabilium
+			sed pro transitu a curva ad curvam variabilium, de hujusmodi
+			differentiatione licet jam olim etiam inter nos actum fuerit, nunc tamen
+			ingenue fateor non cogitavi. Quam vero ingeniose quam acute illam huic
+			negotio accommodaveris, satis mirari nequeo; profecto nihil elegantius est
+			neque excogitari potest quam modus ille Tuus differentiandi curvam per
+			summam differentiuncularum numero infinitarum. Quin crebrius conscendis
+			currum, si nunc Tibi vena mathematica apperitur?
+			Imo<span class="lemma">potest</span><span class="cfootnote"> | quam modus differentiandi  ... apperitur? <span class="italic">erg.</span>| Imo <span class="italic">K</span><sup>1</sup></span> vero defectus haud
+			mediocris calculi differentialis sublatus est; Hinc quid censes? annon
+			possent depromi problemata qualia jam
+			dedi<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; suffecerit problema brevissimi appulsus ad omnigenas applicatum
+			curvas proponi</span> in ellipsibus,<span class="lemma">qualia  ... ellipsibus</span><span class="cfootnote"><span class="italic">erg. K</span><sup>1</sup></span> quibus misere exercere possemus Geometras, interiori
+			geometria licet maxime versatos? viderent sane omnes suos conatus irritos,
+			quamdiu in nostrum artificium non penetrarent, suamque infirmitatem tanto
+			magis mirarentur, quod hujusmodi problemata videantur facilia et ex directa
+			tantum methodo tangentium desumta. Haud dubie quadraturae illae
+			$a\int dx:x\sqrt{aa+xx}$ et $\int dx:x$ quas in logarithmicis pro
+			ratione linearum $B\theta $, $BC$ invenisti, amplius possunt reduci, ambae enim dependent a quadratura
+			hyperbolae, et per consequens per ipsissimas logarithmicas construi
+			possunt. Potuisses explicare methodum brevius et universalius per figuram
+			abstractam id est non ad certum
+			exemplum <span class="afootnote">&#9001;Darüber von Leibniz'
+			Hand:&#9002; malui exemplum adhiberi claritatis causa</span> logarithmicarum adaptatam; spero non ingratum fore, si hic methodum
+			generalissime exposuero: sint ergo curvae ordinatim positione datae,
+			quacunque lege cognita progenitae (vide figuram Tuam) $VC$, $V (C)$,
+			$V((C))$ quarum axis communis $VB$, et parametri variabiles $a$, $(a)$,
+			$((a))$: Sint jam portiones curvarum $V C$, $V (C)$, $V((C))$ (quas Tu
+			aequales posuisti) data lege crescentes vel decrescentes, id est sit
+			$VC=\alpha $, $V(C) = (\alpha )$, $V((C)) = ((\alpha ))$ etc. per $\alpha ,
+			(\alpha ), ((\alpha ))$ etc. intelligo quantitates datas per $a$,
+			$(a)$, $((a))$ etc.<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; Hoc procedet si ex una $VC$ dantur reliquae
+			sec. $a$ sed hoc non semper licet quia non semper potest
+			tolli $x$ in transcendentibus</span> Quaeritur jam tangens curvae $C(C)((C))$ transeuntis per extremitates illarum portionum, quod sic facio: Quoniam $VC$ seu $\alpha $ datur
+			per $a$, ejus differentialis dabitur per $d a$; sit itaque $VC -
+			V(C)$ seu $d\alpha = \overset{1}{\alpha} da$,
+
+			<!-- Sonderzeichen -->
+			<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; malim sic
+			<img class="fn" src="letter/img/Leibniz-Formula-134-FN-1.jpg"/></span>
+			(per
+			$\overset{1}{\alpha}$ $\overset{2}{\alpha}$, $\overset{3}{\alpha}$ etc. intelligo
+			quantitates<span class="afootnote">&#9001;Darüber von Leibniz'
+			Hand:&#9002; pro $\overset{1}{\alpha}$ scribere malo  <img class="fn" src="letter/img/Leibniz-Formula-134-FN-2.jpg"/></span>
+			diversimode datas per $a$). Sit jam $VB$, $x$; ergo particula curvae $_1C_2C$
+			dabitur per $dx$ affectam quantitate composita ex $x$ et $a$ (hujusmodi
+			quantitates datas per $x$ et $a$ quaecunque hic occurrere possunt,
+			vocabo <img src="letter/img/Leibniz-Formula-134-2.jpg" /><span class="afootnote">&#9001;Darüber von Leibniz'
+			Hand:&#9002; malo <img class="fn" src="letter/img/Leibniz-Formula-134-FN-3.jpg"/> vel
+			<img src="letter/img/Leibniz-Formula-134-FN-4.jpg"/></span>
+			etc.) sit itaque <img class="fn" src="letter/img/Leibniz-Formula-134-3.jpg"/>; jam si differentietur $_1C_2C$ secundum $a$,
+			manente $x$, habebitur $_1C_2C - {}_1F_2F$ seu <img src="letter/img/Leibniz-Formula-134-4.jpg"/>,
+
+			<span class="afootnote">&#9001;Darüber von Leibniz'
+			Hand: gestrichen:&#9002;
+			<img class="fn" src="letter/img/Leibniz-Formula-134-FN-5.jpg"/></span>
+			hoc si iterum
+			summetur sed secundum $x$ manente $a$, erit $VC - VF = da$<img src="letter/img/Leibniz-Formula-134-5.jpg"/> (quia <img src="letter/img/Leibniz-Formula-134-5.jpg"/>
+			datur per $a$ et $x$)
+			<img src="letter/img/linfty2.jpg"/> $da$; quoniam vero supra inventum
+			est $\overset{1}{\alpha}da = VC - V(C) = VC - VF - {_1F}(C) =$
+			<img src="letter/img/linfty2.jpg"/>$da - F(C)$, habebitur $F(C) =$
+			<img src="letter/img/linfty2.jpg"/>$da - \overset{1}{\alpha} da$. Tandem quia $BC$ datur per $x$ et $a$, si secundum $a$ differentietur
+			manente $x$, proveniet $F C$ data per $da$, esto ergo $FC =$
+			<img src="letter/img/linfty3.jpg"/>$da$. Unde si ducatur $B\theta$
+			parallela ipsi $F(C)$ id est tangenti curvae datae $VF$, et si fiat
+			<img class="fn" src="letter/img/Leibniz-Formula-134-6.jpg"/>,<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; malo : pro ratione cur = pro :: </span>
+			tanget ducta $C\theta $ curvam $C(C)((C))$ in puncto $C$. Si nunc regula generalis inventa ad
+			certum exemplum esset applicanda dispiciendum tantum esset quid sit
+			<img class="fn" src="letter/img/Leibniz-Formula-134-7.jpg"/>primum enim et ultimum semper dabuntur per $a$ et $x$ promiscue, medium
+			vero per $a$ tantum; dari per $a$ et $x$, vel per $a$, comprehendo etiam
+			quando transcendenter vel ut Tu vocas quadratorie dantur: hoc enim
+			processum regulae generalis non impedit.
 			</p>
 			<p>
-				Dazu bemerke ich:
+			Quod si hanc methodum ad problema brevissimi appulsus applicare velimus,
+			reperiemus quidem facile tangentes synchronarum licet ordinatim positione
+			datae curvae non sint similes ut in superior[e] mea solutione supposui; sed
+			fateberis rem nondum confectam esse, etenim per hanc methodum quaeritur
+			tantum positio tangentis ex dato puncto contactus in data synchrona,
+			interim in celerrimo appulsu res secus se habet quia ex data positione
+			tangente quaeritur punctum contactus. Superest itaque quo exerceas
+			ingenium, ut tam nobile inventum omnibus numeris completum reddas, mihi
+			videtur id praestari
+			posse per intersectionem duarum aliarum curvarum, quae
+			semper construi possunt.<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; nihil aliud quaeritur quam ex lineis ordinatim
+			positione datis illam definire quae datam aliam sive rectam sive curvam
+			tangat. Imo et res adhuc facilior inveniatur, linea punctorum<span class="cfootnote"><span class="italic">erg. LiK</span><sup>2</sup></span> in
+			quibus quaevis synchrona respective aeq[ualis] tangat rectam
+			positione datae parallelam.</span>
+			</p>
+
+			<p>
+			Sed hisce nunc missis pervenio ad aliud egregium inventum pariter
+			generalissimum in quod harum occasione incidi, et quod defectum tollit
+			maximum methodi tangentium inversae, sicuti Tuo sublatus est aliquis
+			methodi tangentium directae. Consistit illud in solutione hujus
+			problematis:<span class="afootnote">&#9001;Darüber von Leibniz'
+			Hand:&#9002; res longe generalius habetur ex meis</span> <span class="spaced">Construere curvam datas ordinatim positione curvas sive similes sive non
+			similes in dato angulo sive invariabili sive data lege variabili secantem.</span>
+			Supposita similitudine curvarum ordinatim positione datarum, problema jam
+			dudum solutum habui ut et in paucis aliis dissimilibus;
+			nunc<span class="lemma">habui</span><span class="cfootnote"> | ut et in paucis aliis
+			&#9001;—&#9002; erg. | . Nunc <span class="italic">K</span><sup>1</sup></span></span> vero quomodo
+			in similibus et dissimilibus
+			generaliter id<span class="lemma">quomodo in dissimilibus</span><span class="cfootnote"> | et
+			generaliter <span class="italic">erg.</span> |  id <span class="italic">K</span><sup>1</sup></span></span> solverim paucis explicare haud ingratum Tibi fore confido. Sint curvae ordinatim positione datae $AF$,
+			$AE$, $AC$ etc. secandae a curva quaesita $FEC$ in angulo dato quem hic
+			exempli loco ponamus ubique rectum (ut videas, quam facile solutu sit, quod
+			operose ex dioptricis deducere
+			volebas.<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; volebam, cum nondum novum hoc artificium reperissem</span><span class="lemma">ut
+			videas  ... volebas</span><span class="cfootnote"><span class="italic">erg. K</span><sup>1</sup></span> Ad $AH$ axem communem intelligatur applicari $HG$ parameter curvae $AE$,
+			cujus intersectio cum $GH$ producta determinet punctum $E$ in curva
+			quaesita: Si hac ratione ubique parametri applicari intelligantur, fiet
+			curva $AG$ quam si determinaverimus eadem opera etiam $FEC$ erit
+			determinata. Esto itaque $AH$, $x$; $HG$ parameter variabilis $a$; $HE$,
+			vel $HB$ (data per $x$ et $a$) <img src="letter/img/linfty.jpg"/>
+			quae si
+			differentietur secundum $a$, manente $x$, habebitur $BE$; sit itaque $BE =$ <img src="letter/img/linfty1.jpg"/>$da$;
+			differentiando vero $BH$ seu
+			<img src="letter/img/linfty.jpg"/> secundum $x$ manente $a$, proveniet $CI$ seu
+			$BD$. Sit itaque <img src="letter/img/linfty2.jpg"/> $dx,$ et proinde $DE =$<img src="letter/img/linfty1.jpg"/>
+			$da-$<img src="letter/img/linfty2.jpg"/>$dx$, est autem
+			$DC = dx$; ergo, quia ex conditione problematis angulus $BCE$ est
+			rectus, erit $\Box DC =$<span class="large">&#9645;</span> $BDE$, id est  $dx^2 =$
+			<img src="letter/img/linfty1.jpg"/><img src="letter/img/linfty2.jpg"/>$dadx - $<img src="letter/img/linfty2.jpg"/>
+			$dx^2$ seu $dx + $<img src="letter/img/linfty2.jpg"/>$^2$
+			$dx = $<img src="letter/img/linfty1.jpg"/><img src="letter/img/linfty2.jpg"/>
+			$da$: Haec igitur
+			aequatio differentialis determinat curvam $AG$, qua constructa
+			construitur etiam quaesita $FEC$;<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; ita scilicet problema de curva dati
+			anguli ad curvas ordinatim positione datas reducitur ad tangentium
+			inversam</span> nam data $GH$ parametro, dabitur etiam curva $AE$ cujus illa est
+			parameter; atque adeo producta $GH$, occurret curvae $AE$ in puncto $E$
+			quod erit ad curvam quaesitam $FEC$. Hujusmodi constructio per parametrorum
+			variabilium applicationem non inelegans mihi videtur, non dubito quin alibi
+			quoque possit inservire, Tuo praesertim accedente
+			ingenio. Notare<span class="lemma">notare  ... Iterum vale</span><span class="cfootnote"><span class="italic">erg. K</span><sup>1</sup>, <span class="italic">Schluss von K</span><sup>1</sup></span>
+			hic
+			convenit, quod si curvae ordinatim positione datae sint algebraicae, erit
+			curva parametrorum $AG$ transcendens primi generis; si illae sint
+			transcendentes primi generis erit haec transcendens secundi, et ita
+			consequenter. Patitur quidem hoc exceptionem in nonnullis exemplis
+			particularibus, quando scilicet quantitas <img src="letter/img/linfty1.jpg"/>
+			evadit algebraica, id quod per accidens fieri potest,
+			etiamsi $AF$, $AE$, $AC$ sint transcendentes. Iterum
+			vale.<span class="afootnote">&#9001;Darunter von Leibniz' Hand:&#9002; Longe universaliora haberi possunt. Etiamsi angulus non sit datus variabili vel invariabili lege, id est licet puncto
+			dato non detur tangentium curvae $AE$ et curvae $CE$ angulus, sed
+			proprietas simul oscula involvens, seu relatio inter oscula tangentes et ordinatas, res tamen hoc modo
+			habebitur, eo gradu quo oportet </span>
+			<p class="center">
+				<img src="letter/img/Leibniz-Figure-134-FN-1.jpg" />
+			</p>
+			</p>
+
+			<p>
+			Groningae d. 14 Augusti 1697.
+			</p>
+
+			<p>Ut impleam vacuum hujus paginae transcribam huc quaedam ex
+			literis Dn.
+			Varignonii quas eodem die cum Tuis accepi, ut videas quam misere luat
+			noster calculus apud invidos et ignaros; vix putem Lutheri et Calvini
+			reformationem durius habitam fuisse. <span class="italic">M<sup>r</sup> le Marquis de l'Hospital</span>, inquit,
+			<span class="italic">est encore à la campagne, desorte que je me trouve seul icy chargé de la
+			défense des infiniment petits, dont je suis le vray martyr tant j'ay désja
+			soutenu d'assaux pour eux contre certains mathematiciens du vieux style,
+			qui chagrins de voir que par ce calcul les jeunes gens les attrapent et
+			meme les passent, font <span class="italic">tout ce qu'ils peuvent pour le décrier, sans qu'on
+			puisse obtenir d'eux d'écrire contre. Il est pourtant vray que depuis la</span>
+			<span class="italic">solution</span> <span class="italic">que M. le Marquis de l'Hospital a donnée de vôtre probléme <span class="spaced">de
+			Linea celerrimi descensus,</span> ils ne parlent plus tant ni si haut
+			qu'auparavant.</span> Quos hic vocat mathematicos styli veteris, haud dubie
+			collimat in Catelanum, de la Hire, Roolium aliosque obscuri nominis qui
+			nominari non merentur<span class="afootnote">&#9001;Darunter von Leibniz' Hand:&#9002; utile scribi D<sup>no</sup> Varignonio de vera aestimatione potentiae</span>
+			Jam diu est quod nihil <span class="italic">Actorum</span> viderim; fac quaeso ut sciam, an ibi in
+			tempore monitum sit me solvisse problemata fraterna.<span class="afootnote">&#9001;Darüber von Leibniz' Hand:&#9002; scripsi ut fieret, misique schedulam scriptam Dn. fratri; jam tum</span>
+			Ecce ultimus labitur mensis praestituti temporis intra quod mihi
+			conceditur me soluturum declarare.
 			</p>
 			<p>
-				A. Ich weiss nicht, warum die Herren es für <span class="print-spaced ms-underline">wahrscheinlich</span> halten, dass die plötzlichen magnetischen Aenderungen in der Atmosphäre ihren Grund haben sollten.
-			</p>
-			<p>
-				Ich sehe <span class="print-spaced ms-underline">gar keinen vernünftige</span>n Grund zu einer solchen Wahrscheinlichkeit. Nach allen unsern Erfahrungen haben selbst nahe Gewitter keinen hervortretenden Einfluss.
-			</p>
-			<p>Der einzige atmosphärische Einfluss, der constirt,
-		</div>
-
-		<div class="page">
-			<span class="pagebreak print"><span class="page-number">110</span></span>
-
-
-			<!-- Fußnote Peters, math. Ausdrücke B1. S15 -->
-
-			<p>
-				wobey er den meisten Vortheil hat, kann er den Louisd'or zu
-				14 Th. 1 ß rechnen. Die Dioptrik und seine Bücher können
-				wohl zusammengepackt werden, und ich erwarte Ihre
-				Bestimmung, ob ich sie mit der Post absenden soll.
-				</p>
-			<p>
-				Montag, d. 11ten werden Hipp's Instrumente verkauft, unter
-				andern auch der 5zöllige Troughton'sche Sextant. Mir dünkt,
-				das wäre recht ein Instrument für Rennenkampf, wenn er sich
-				mit der Praxis befassen will, Repsold meint für 13–14 Louisd'or
-				würde es zu bekommen seyn. Da die Briefe aber hier nur
-				Montags und Donnerstags ankommen, so würde, wenn er nicht
-				seinen Brief an mich, nach Hamburg addressirt, bey Herrn
-				Repsold abzugeben, oder lieber gradezu an Repsold, seine
-				Commission zu spät kommen.
-			</p>
-			<p>G
-				Gestern habe ich die Auflösung an Lindenau gesandt. Die
-				Wurzeln der Gleichung für Ihre Zahlen sind<span class="fn"><sup>[P]</sup></span><span class="footnote peters">Vergl. Monatliche Correspondenz. Bd. XX. Seite 287.</span>:
-
-				$$
-				+ 0,945495\\
-				+ 0,395635\\
-				- 0,637596\\
-				+ 3,443930\\
-				$$
-
-				von denen 3 gleich durch die Bedingungen der Aufgabe
-				wegfallen, und nur die zweyte bleibt, es ist also:
+			Prima occasione per studiosum aut alium hac transeuntem mittam D<sup>no</sup> Meyero
+			Tuas ad Cartesium animadversiones. Praecipua quae ibi notavi Tibi jam
+			perscripsi.
 			</p>
 
-			$$
-			\begin{eqnarray*}
-			h & = & 23° 18' 20'',3\\
-			t & = & 5^{h} 36' 16'',5\\
-			A & = & 101°  1' 29'',5
-			\end{eqnarray*}
-			$$
+			<!-- Letter end ------------------------------------------------------------>
 
-			<p>Man könnte noch als eine Aufgabe vorschlagen, welche von
-			den Stundenlinien, die zwischen der Zone von + 25°, und
-			- 25° Declination begriffen sind, am meisten gekrümmt sey?
-			Ich weis aber in diesem Augenblick es noch nicht in Gleichung
-			zu setzen.</p>
-			<p>Der Professor <span class="inserted gerardy">Struve</span> kam im Museum zu mir und bat mich,
-			ihm zu sagen, ob nicht eine kleine Unrichtigkeit im Ausdrucke
-			auf ihrer ersten Seite<span class="fn"><sup>[P]</sup></span><span class="print-footnote peters">Der Theoria m. c. c.</span> sey, wo man, wie er meinte, statt
-			<span class="print-spaced ms-underline">inversa, directa</span> lesen müsse, damit
-			$\frac{g}{t\sqrt{p\sqrt{(1+\mu }}} = \mathrm {Const.}$
-			<span class="pagebreak print"><span class="page-number">16</span></span>
-			Er bot mir zugleich 3–4 Quartblätter an, die er vollgerechnet
-			hatte, und die mir zum Leitfaden dienen sollten. Ich verbat
-			natürlich seine Papiere und zeigte ihm mit 2 Kreidestrichen an
-			der Billardtafel, dass er nicht recht klug sey. Gestern schrieb
-			er mir ein Billet, ob ich ihm nicht einen Beweis, der durch
-			alle 4 Quadranten gölte, geben könne, dass</p>
-
-
-			<p class="ind2">
-				Ihren aufrichtigsten Verehrer und wärmsten Freund
-			</p>
-			<p class="ind3">
-				Schumacher.
-			</p>
-			<p>Altona, d. 30<sup>sten</sup> December 1809.</p>
 		</div>
 
 	</div>
 
-<!-- Letter end ------------------------------------------------------------>
+	<div class="pane viewer -right -info">
 
-	<div class="sidebar">
+		<div class="content -minimized">
+			//Minimized//
+		</div>
 
-		<nav class="nav nav--horizontal">
-			<ul>
-				<li><a href="#" class="nav__button nav__button--bookmark"><span class="nav__button-title">Bookmarken</span></a></li>
-				<li><a href="#" class="nav__button nav__button--download"><span class="nav__button-title">Download</span></a></li>
-				<li><a href="#" class="nav__button nav__button--settings"><span class="nav__button-title">Einstellungen</span></a></li>
-				<li><a href="#" class="nav__button nav__button--help"><span class="nav__button-title">Hilfe</span></a></li>
-			</ul>
-		</nav>
+		<div class="content -default">
 
-		<dl class="sidebar__metadata">
-			<dt>Absender:</dt><dd>Gauss,&nbsp;Carl Friedrich</dd>
-			<dt>Empfänger:</dt><dd>Schumacher,&nbsp;Heinrich Christian &amp; Akademie der Wissenschaften, Turin</dd>
-			<dt>Datum:</dt><dd><span>1848-02-15 <a href="#" title="Gerardy">‹G›</a><br>1844-02-15 <a href="#">‹B›</a></dd>
-			<dt>Umfang:</dt><dd>4 S.</dd>
-			<dt>Sprache:</dt><dd>deutsch</dd>
-			<dt>Zitiert in:</dt><dd><a href="#">Gauss 1874, 6, S.&nbsp;43</a></dd>
-			<dt>Bemerkungen:</dt><dd>Es sind nur zwei Fragmente des Briefes vorhanden.<br><a href="#">Merzbach</a> verweist auf <a href="#">Stargardt 1962, 558, Nr.&nbsp;579</a></dd>
-			<dt>Zusammenfassung:</dt><dd>Über Beobachtung der Flora und ihre Bahnberechnung</dd>
-		</dl>
+			<nav class="nav -horizontal">
+				<ul>
+					<li><a href="#" class="nav_button -variants -highlight"><span class="popup">Varianten</span></a></li>
+					<li><a href="#" class="nav_button -additions -highlight"><span class="popup">Ergänzungen</span></a></li>
+					<li><a href="#" class="nav_button -fullscreen"><span class="popup">Vollbild</span></a></li>
+				</ul>
+			</nav>
 
-		<h2 class="sidebar__heading">Manuskript</h2>
-		<p>
-			<a href="#">Braunschweig, Stadtarchiv, G IX 21:20-21, Nr.89</a><br>
-			<span class="italic">Auf der Rückseite des Briefes befindet sich ein Absatz von Gauss' Hand, der mit dem Inhalt des Briefs nichts zu tun hat.</span>
-		</p>
+			<select class="nav_variants">
+				<option>Alle Varianten</option>
+				<option>K<sup>1</sup></option>
+				<option>K<sup>2</sup></option>
+				<option>E</option>
+			</select>
 
-		<h2 class="sidebar__heading">Kopien</h2>
-		<ul class="sidebar__surrogates">
-			<li><i class="icon ms" title="handschriftlich"></i>Natchitoches, NSU, Dunnington, Folder 29 von Dunnington; 4 S.</li>
-			<li><i class="icon ms" title="handschriftlich"></i><i class="icon en"></i>Natchitoches, NSU, Dunnington, Folder 29 - englische Übersetzung (unvollständig); 2 S.</li>
-			<li><i class="icon tp" title="maschinenschriftlich"></i><i class="icon ru"></i>Hill 1985, 25, Nr.52</li>
-			<li>Gerardy 1977a, S.168 ‹B› (vermutlich S.158 ‹Fo›)<span class="source-B">[B]</span></li>
-			<li>Göttingen, SUB: Gauss, Briefe D: C. F. Gauss, 2; 4 S.</li>
-			<li><i class="icon tp" title="maschinenschriftlich"></i><i class="icon de"></i>Natchitoches, NSU, Dunnington, Folder 29; 2 S. + Umschlag</li>
-		</ul>
+			<span class="demo-variant-info -a">erg. K<sup>1</sup></span>
+			<span class="demo-variant-info -b">erg. K<sup>2</sup></span>
 
-		<h2 class="sidebar__heading">Drucke</h2>
-		<ul class="sidebar__surrogates">
-			<li><i class="icon pprint" title="Teildruck"></i>Hill 1985, 25, Nr.52</li>
-			<li><i class="icon fac" title="Facsimile"></i>Gresky 1968, vor S.17</li>
-			<li><i class="icon reg" title="Regest"></i>Cajori 1899, S.700-701</li>
-			<li><i class="icon preg" title="Teilregest"></i>Peters 1860/65, 4, S.101-102, Nr.799(452) (unvollständig)</li>
-			<li><i class="icon pfac" title="Teilfacsimile"></i>Gerardy 1969, S.85 (fehlende Namen ergänzt)</li>
-		</ul>
+		</div>
 
-		<h2 class="sidebar__heading">Quellen</h2>
-		<ul class="sidebar__sources">
-			<li><a href="#">Gerardy-Katalog</a></li>
-			<li><a href="#">Merzbach</a></li>
-			<li><a href="#">Folkerts</a></li>
-		</ul>
+	</div>
+
+	<div class="pane sidebar">
+
+		<div class="content -minimized">
+			<nav class="nav -vertical">
+				<ul>
+					<li><a href="#" class="nav_button -restore"><span class="popup">Wieder herstellen</span></a></li>
+				</ul>
+			</nav>
+			<div class="content_title">Info</div>
+		</div>
+
+		<div class="content -default">
+
+			<nav class="nav -horizontal">
+				<ul>
+					<li><a href="#" class="nav_button -bookmark"><span class="popup">Bookmarken</span></a></li>
+					<li><a href="#" class="nav_button -download"><span class="popup">Download</span></a></li>
+					<li><a href="#" class="nav_button -settings"><span class="popup">Einstellungen</span></a></li>
+					<li><a href="#" class="nav_button -help"><span class="popup">Hilfe</span></a></li>
+					<li><a href="#" class="nav_button -minimize"><span class="popup">Minimieren</span></a></li>
+				</ul>
+			</nav>
+
+			<dl class="sidebar_metadata">
+				<h2 class="sidebar_heading">Kontext</h2>
+				<p>
+					Die Abfertigung antwortet auf <a href="#">Nr. 124</a> und ihr
+					P.S. auf <a href="#">Nr. 129</a>, sie kreuzt sich mit <a href="#">Nr. 133</a> und wird beantwortet durch
+					<a href="#">Nr. 158</a> . Der Hauptteil der Abfertigung wurde schon am 20. August
+					1697 geschrieben, vgl. S..&nbsp;<ref target="#134" rend="page"/>Z.&nbsp;24.
+				</p>
+				<h2 class="sidebar_heading">Überlieferung</h2>
+				<ul class="sidebar_list">
+					<li class="demo-variant-source -a">K<sup>1</sup> Konzept: <span class="capitals">Basel</span> <span class="italic">Universitätsbibl.</span> L I a 18 Bl. 83-86. 2 Bog. 4<sup>o</sup>. 8 S.</li>
+					<li class="demo-variant-source -b">K<sup>2</sup> Abfertigung: LBr. 57,1 Bl. 209.213.210-212. 2 Bog. 1 Bl. 4<sup>o</sup>. 9$3\over 4$ S. Bemerkungen von Leibniz' Hand (<span class="italic">LiK</span><sup>2</sup>). (Unsere Druckvorlage)</li>
+					<li>E Erstdruck	nach einer unbekannten Vorlage: <span class="italic">Commercium philos. et math.</span> 1, 1745, S.*323-333 (teilw.). — Danach und nach <span class="italic">K</span><sup>2</sup>: <span class="capitals">Gerhardt</span>, <span class="italic">Math. Schr.</span> 3, 1855, S.*455-466.</span></li>
+				</ul>
+				<dt>Absender:</dt><dd>Leibniz, Gottfried Wilhelm</dd>
+				<dt>Empfänger:</dt><dd>Bernoulli, Johann</dd>
+				<dt>Datum:</dt><dd><span>1697-08-14 oder 1679-08-24</dd>
+				<dt>Umfang:</dt><dd>14 S.</dd>
+				<dt>Sprache:</dt><dd>Latein</dd>
+			</dl>
+		</div>
 
 	</div>
 
@@ -917,13 +673,13 @@
 
 <footer class="footer">Footer</footer>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/theme.js"></script>
-
 <script type="text/x-mathjax-config">
 	MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"], tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }, "HTML-CSS": { availableFonts: ["TeX"] } });
 </script>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/theme.js"></script>
 
 </body>
 
